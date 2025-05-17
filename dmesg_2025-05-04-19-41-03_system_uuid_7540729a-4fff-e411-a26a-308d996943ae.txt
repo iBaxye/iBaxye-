@@ -1,0 +1,1614 @@
+[    0.000000] Linux version 6.11.11 (nick@nick-np5xnp6xnp7xpnp) (x86_64-buildroot-linux-gnu-gcc.br_real (Buildroot -ge80f0d4972) 13.3.0, GNU ld (GNU Binutils) 2.42) #2 SMP PREEMPT_DYNAMIC Thu Jan 23 10:42:35 GMT 2025
+[    0.000000] Command line: console=tty3 loglevel=3 nwipe_options="--method=dodshort" 
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai  
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009abff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000009bf70fff] usable
+[    0.000000] BIOS-e820: [mem 0x000000009c10e000-0x000000009cc8dfff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000009cc8e000-0x000000009cf8dfff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000009cf8e000-0x000000009cffdfff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x000000009cffe000-0x000000009cffefff] usable
+[    0.000000] BIOS-e820: [mem 0x000000009cfff000-0x000000009fffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000feb00000-0x00000000feb03fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed10000-0x00000000fed19fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ffa00000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000025effffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] SMBIOS 2.8 present.
+[    0.000000] DMI: Hewlett-Packard HP Notebook/80C1, BIOS F.30 12/24/2019
+[    0.000000] DMI: Memory slots populated: 2/2
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.000000] tsc: Detected 1899.832 MHz processor
+[    0.000764] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000769] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000779] last_pfn = 0x25f000 max_arch_pfn = 0x400000000
+[    0.000786] MTRR map: 8 entries (5 fixed + 3 variable; max 25), built from 10 variable MTRRs
+[    0.000788] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.001044] e820: update [mem 0x9cfff000-0xffffffff] usable ==> reserved
+[    0.001049] last_pfn = 0x9cfff max_arch_pfn = 0x400000000
+[    0.011619] found SMP MP-table at [mem 0x000fe1b0-0x000fe1bf]
+[    0.011634] Using GB pages for direct mapping
+[    0.011908] ACPI: Early table checksum verification disabled
+[    0.011911] ACPI: RSDP 0x00000000000FE020 000024 (v02 HPQOEM)
+[    0.011917] ACPI: XSDT 0x000000009CFC6188 0000D4 (v01 HPQOEM SLIC-MPC 00000001 HP   01000013)
+[    0.011925] ACPI: FACP 0x000000009CFEA000 00010C (v05 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.011932] ACPI: DSDT 0x000000009CFD4000 01022A (v02 HPQOEM SLIC-MPC 00000000 ACPI 00040000)
+[    0.011937] ACPI: FACS 0x000000009CF86000 000040
+[    0.011941] ACPI: UEFI 0x000000009CFFC000 000236 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.011945] ACPI: UEFI 0x000000009CFFB000 000042 (v01 HPQOEM INSYDE   00000000 HP   00040000)
+[    0.011950] ACPI: SSDT 0x000000009CFF4000 006602 (v01 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.011954] ACPI: MSDM 0x000000009CFF3000 000055 (v03 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.011958] ACPI: SSDT 0x000000009CFEF000 003B2D (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.011963] ACPI: ASF! 0x000000009CFEE000 0000A5 (v32 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.011967] ACPI: ASPT 0x000000009CFED000 000034 (v07 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.011971] ACPI: BOOT 0x000000009CFEC000 000028 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.011975] ACPI: DBGP 0x000000009CFEB000 000034 (v01 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.011980] ACPI: HPET 0x000000009CFE9000 000038 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.011984] ACPI: LPIT 0x000000009CFE8000 000094 (v01 HPQOEM INSYDE   00000000 HP   00040000)
+[    0.011988] ACPI: APIC 0x000000009CFE7000 00008C (v03 HPQOEM SLIC-MPC 00000001 HP   00040000)
+[    0.011992] ACPI: MCFG 0x000000009CFE6000 00003C (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.011996] ACPI: WDAT 0x000000009CFE5000 000224 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.012000] ACPI: SSDT 0x000000009CFD1000 002F87 (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.012004] ACPI: SSDT 0x000000009CFD0000 000C12 (v02 HPQOEM INSYDE   00001000 ACPI 00040000)
+[    0.012008] ACPI: SSDT 0x000000009CFCF000 000539 (v02 HPQOEM INSYDE   00003000 ACPI 00040000)
+[    0.012012] ACPI: SSDT 0x000000009CFCE000 000B74 (v02 HPQOEM INSYDE   00003000 ACPI 00040000)
+[    0.012016] ACPI: SSDT 0x000000009CFC8000 005F5C (v02 HPQOEM INSYDE   00003000 ACPI 00040000)
+[    0.012021] ACPI: DMAR 0x000000009CFC7000 0000B0 (v01 HPQOEM INSYDE   00000001 HP   00040000)
+[    0.012025] ACPI: FPDT 0x000000009CFC5000 000044 (v01 HPQOEM SLIC-MPC 00000002 HP   00040000)
+[    0.012028] ACPI: Reserving FACP table memory at [mem 0x9cfea000-0x9cfea10b]
+[    0.012031] ACPI: Reserving DSDT table memory at [mem 0x9cfd4000-0x9cfe4229]
+[    0.012032] ACPI: Reserving FACS table memory at [mem 0x9cf86000-0x9cf8603f]
+[    0.012033] ACPI: Reserving UEFI table memory at [mem 0x9cffc000-0x9cffc235]
+[    0.012034] ACPI: Reserving UEFI table memory at [mem 0x9cffb000-0x9cffb041]
+[    0.012035] ACPI: Reserving SSDT table memory at [mem 0x9cff4000-0x9cffa601]
+[    0.012036] ACPI: Reserving MSDM table memory at [mem 0x9cff3000-0x9cff3054]
+[    0.012037] ACPI: Reserving SSDT table memory at [mem 0x9cfef000-0x9cff2b2c]
+[    0.012039] ACPI: Reserving ASF! table memory at [mem 0x9cfee000-0x9cfee0a4]
+[    0.012040] ACPI: Reserving ASPT table memory at [mem 0x9cfed000-0x9cfed033]
+[    0.012041] ACPI: Reserving BOOT table memory at [mem 0x9cfec000-0x9cfec027]
+[    0.012042] ACPI: Reserving DBGP table memory at [mem 0x9cfeb000-0x9cfeb033]
+[    0.012043] ACPI: Reserving HPET table memory at [mem 0x9cfe9000-0x9cfe9037]
+[    0.012044] ACPI: Reserving LPIT table memory at [mem 0x9cfe8000-0x9cfe8093]
+[    0.012045] ACPI: Reserving APIC table memory at [mem 0x9cfe7000-0x9cfe708b]
+[    0.012046] ACPI: Reserving MCFG table memory at [mem 0x9cfe6000-0x9cfe603b]
+[    0.012047] ACPI: Reserving WDAT table memory at [mem 0x9cfe5000-0x9cfe5223]
+[    0.012049] ACPI: Reserving SSDT table memory at [mem 0x9cfd1000-0x9cfd3f86]
+[    0.012050] ACPI: Reserving SSDT table memory at [mem 0x9cfd0000-0x9cfd0c11]
+[    0.012051] ACPI: Reserving SSDT table memory at [mem 0x9cfcf000-0x9cfcf538]
+[    0.012052] ACPI: Reserving SSDT table memory at [mem 0x9cfce000-0x9cfceb73]
+[    0.012053] ACPI: Reserving SSDT table memory at [mem 0x9cfc8000-0x9cfcdf5b]
+[    0.012054] ACPI: Reserving DMAR table memory at [mem 0x9cfc7000-0x9cfc70af]
+[    0.012055] ACPI: Reserving FPDT table memory at [mem 0x9cfc5000-0x9cfc5043]
+[    0.012175] No NUMA configuration found
+[    0.012176] Faking a node at [mem 0x0000000000000000-0x000000025effffff]
+[    0.012180] NODE_DATA(0) allocated [mem 0x25efe7380-0x25effc37f]
+[    0.012211] Zone ranges:
+[    0.012212]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.012215]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.012217]   Normal   [mem 0x0000000100000000-0x000000025effffff]
+[    0.012219] Movable zone start for each node
+[    0.012220] Early memory node ranges
+[    0.012221]   node   0: [mem 0x0000000000001000-0x0000000000099fff]
+[    0.012223]   node   0: [mem 0x0000000000100000-0x000000009bf70fff]
+[    0.012225]   node   0: [mem 0x000000009cffe000-0x000000009cffefff]
+[    0.012226]   node   0: [mem 0x0000000100000000-0x000000025effffff]
+[    0.012229] Initmem setup node 0 [mem 0x0000000000001000-0x000000025effffff]
+[    0.012234] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.012266] On node 0, zone DMA: 102 pages in unavailable ranges
+[    0.017591] On node 0, zone DMA32: 4237 pages in unavailable ranges
+[    0.029685] On node 0, zone Normal: 12289 pages in unavailable ranges
+[    0.029743] On node 0, zone Normal: 4096 pages in unavailable ranges
+[    0.029752] Reserving Intel graphics memory at [mem 0x9e000000-0x9fffffff]
+[    0.029834] ACPI: PM-Timer IO Port: 0x1808
+[    0.029854] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-39
+[    0.029858] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.029860] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.029866] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.029868] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.029873] TSC deadline timer available
+[    0.029880] CPU topo: Max. logical packages:   1
+[    0.029881] CPU topo: Max. logical dies:       1
+[    0.029882] CPU topo: Max. dies per package:   1
+[    0.029890] CPU topo: Max. threads per core:   2
+[    0.029891] CPU topo: Num. cores per package:     2
+[    0.029892] CPU topo: Num. threads per package:   4
+[    0.029893] CPU topo: Allowing 4 present CPUs plus 0 hotplug CPUs
+[    0.029911] [mem 0xa0000000-0xdfffffff] available for PCI devices
+[    0.029913] Booting paravirtualized kernel on bare hardware
+[    0.029917] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.050740] setup_percpu: NR_CPUS:64 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    0.051175] percpu: Embedded 66 pages/cpu s233176 r8192 d28968 u524288
+[    0.051183] pcpu-alloc: s233176 r8192 d28968 u524288 alloc=1*2097152
+[    0.051186] pcpu-alloc: [0] 0 1 2 3 
+[    0.051206] Kernel command line: console=tty3 loglevel=3 nwipe_options="--method=dodshort" 
+[    0.051285] Unknown kernel command line parameters "nwipe_options=--method=dodshort", will be passed to user space.
+[    0.051296] random: crng init done
+[    0.052351] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.052905] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.052999] Fallback order for Node 0: 0 
+[    0.053003] Built 1 zonelists, mobility grouping on.  Total pages: 2076427
+[    0.053004] Policy zone: Normal
+[    0.053006] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.053008] software IO TLB: area num 4.
+[    0.094122] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.094142] Kernel/User page tables isolation: enabled
+[    0.094944] Dynamic Preempt: voluntary
+[    0.094989] rcu: Preemptible hierarchical RCU implementation.
+[    0.094990] rcu: 	RCU event tracing is enabled.
+[    0.094991] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=4.
+[    0.094994] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.094995] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.095003] NR_IRQS: 4352, nr_irqs: 728, preallocated irqs: 16
+[    0.095207] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.096206] Console: colour VGA+ 80x25
+[    0.096209] printk: legacy console [tty3] enabled
+[    0.096246] ACPI: Core revision 20240322
+[    0.096463] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484882848 ns
+[    0.096477] APIC: Switch to symmetric I/O mode setup
+[    0.096602] x2apic: IRQ remapping doesn't support X2APIC mode
+[    0.097252] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.116480] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x36c51a91b6f, max_idle_ns: 881590472968 ns
+[    0.116484] Calibrating delay loop (skipped), value calculated using timer frequency.. 3799.66 BogoMIPS (lpj=7599328)
+[    0.116515] CPU0: Thermal monitoring enabled (TM1)
+[    0.116544] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.116546] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.116548] process: using mwait in idle threads
+[    0.116551] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.116554] Spectre V2 : Mitigation: Retpolines
+[    0.116555] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.116556] Spectre V2 : Spectre v2 / SpectreRSB : Filling RSB on VMEXIT
+[    0.116557] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.116558] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.116560] Spectre V2 : User space: Mitigation: STIBP via prctl
+[    0.116562] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[    0.116563] MDS: Mitigation: Clear CPU buffers
+[    0.116565] MMIO Stale Data: Unknown: No mitigations
+[    0.116566] SRBDS: Vulnerable: No microcode
+[    0.116570] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.116572] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.116574] x86/fpu: Enabled xstate features 0x3, context size is 576 bytes, using 'standard' format.
+[    0.167286] Freeing SMP alternatives memory: 68K
+[    0.167292] pid_max: default: 32768 minimum: 301
+[    0.167324] LSM: initializing lsm=capability,selinux
+[    0.167332] SELinux:  Initializing.
+[    0.167380] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.167399] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.168540] smpboot: CPU0: Intel(R) Pentium(R) CPU 3825U @ 1.90GHz (family: 0x6, model: 0x3d, stepping: 0x4)
+[    0.168722] Performance Events: PEBS fmt2+, Broadwell events, 16-deep LBR, full-width counters, Intel PMU driver.
+[    0.168745] ... version:                3
+[    0.168747] ... bit width:              48
+[    0.168748] ... generic registers:      4
+[    0.168748] ... value mask:             0000ffffffffffff
+[    0.168750] ... max period:             00007fffffffffff
+[    0.168751] ... fixed-purpose events:   3
+[    0.168752] ... event mask:             000000070000000f
+[    0.168897] signal: max sigframe size: 1520
+[    0.168904] Estimated ratio of average max frequency by base frequency (times 1024): 1024
+[    0.168932] rcu: Hierarchical SRCU implementation.
+[    0.168933] rcu: 	Max phase no-delay instances is 1000.
+[    0.169049] smp: Bringing up secondary CPUs ...
+[    0.169133] smpboot: x86: Booting SMP configuration:
+[    0.169134] .... node  #0, CPUs:      #1 #2 #3
+[    0.170257] MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+[    0.170443] smp: Brought up 1 node, 4 CPUs
+[    0.170447] smpboot: Total of 4 processors activated (15198.65 BogoMIPS)
+[    0.172035] Memory: 7767188K/8305708K available (38912K kernel code, 2568K rwdata, 14216K rodata, 255364K init, 1592K bss, 535092K reserved, 0K cma-reserved)
+[    0.172288] devtmpfs: initialized
+[    0.172623] ACPI: PM: Registering ACPI NVS region [mem 0x9cc8e000-0x9cf8dfff] (3145728 bytes)
+[    0.172712] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.172717] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.172907] pinctrl core: initialized pinctrl subsystem
+[    0.173020] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.173155] audit: initializing netlink subsys (disabled)
+[    0.173215] audit: type=2000 audit(1746380655.076:1): state=initialized audit_enabled=0 res=1
+[    0.173304] thermal_sys: Registered thermal governor 'step_wise'
+[    0.173307] thermal_sys: Registered thermal governor 'user_space'
+[    0.173320] cpuidle: using governor ladder
+[    0.173380] Simple Boot Flag at 0x44 set to 0x1
+[    0.173391] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.173393] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.173441] PCI: ECAM [mem 0xe0000000-0xefffffff] (base 0xe0000000) for domain 0000 [bus 00-ff]
+[    0.173458] PCI: Using configuration type 1 for base access
+[    0.173801] ACPI: Added _OSI(Module Device)
+[    0.173803] ACPI: Added _OSI(Processor Device)
+[    0.173805] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.173806] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.192215] ACPI: 8 ACPI AML tables successfully acquired and loaded
+[    0.195952] ACPI: Dynamic OEM Table Load:
+[    0.195963] ACPI: SSDT 0xFFFF99E60016E400 0003D3 (v02 PmRef  Cpu0Cst  00003001 INTL 20130117)
+[    0.196969] ACPI: Dynamic OEM Table Load:
+[    0.196978] ACPI: SSDT 0xFFFF99E600ADA800 0005AA (v02 PmRef  ApIst    00003000 INTL 20130117)
+[    0.198020] ACPI: Dynamic OEM Table Load:
+[    0.198027] ACPI: SSDT 0xFFFF99E6001A0200 000119 (v02 PmRef  ApCst    00003000 INTL 20130117)
+[    0.199690] ACPI: EC: EC started
+[    0.199692] ACPI: EC: interrupt blocked
+[    0.200637] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.200641] ACPI: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC used to handle transactions
+[    0.200643] ACPI: Interpreter enabled
+[    0.200671] ACPI: PM: (supports S0 S3 S5)
+[    0.200672] ACPI: Using IOAPIC for interrupt routing
+[    0.200707] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.200709] PCI: Using E820 reservations for host bridge windows
+[    0.201240] ACPI: Enabled 8 GPEs in block 00 to 7F
+[    0.278793] ACPI: \_TZ_.FN00: New power resource
+[    0.278870] ACPI: \_TZ_.FN01: New power resource
+[    0.278940] ACPI: \_TZ_.FN02: New power resource
+[    0.279010] ACPI: \_TZ_.FN03: New power resource
+[    0.279080] ACPI: \_TZ_.FN04: New power resource
+[    0.280127] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+[    0.280136] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[    0.280260] acpi PNP0A08:00: _OSC: OS requested [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+[    0.280263] acpi PNP0A08:00: _OSC: platform willing to grant [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+[    0.280265] acpi PNP0A08:00: _OSC: platform retains control of PCIe features (AE_ERROR)
+[    0.281076] PCI host bridge to bus 0000:00
+[    0.281081] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.281084] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.281086] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.281089] pci_bus 0000:00: root bus resource [mem 0xa0000000-0xdfffffff window]
+[    0.281090] pci_bus 0000:00: root bus resource [mem 0xfe000000-0xfe113fff window]
+[    0.281093] pci_bus 0000:00: root bus resource [bus 00-fe]
+[    0.281112] pci 0000:00:00.0: [8086:1604] type 00 class 0x060000 conventional PCI endpoint
+[    0.281208] pci 0000:00:02.0: [8086:1606] type 00 class 0x030000 conventional PCI endpoint
+[    0.281220] pci 0000:00:02.0: BAR 0 [mem 0xc1000000-0xc1ffffff 64bit]
+[    0.281228] pci 0000:00:02.0: BAR 2 [mem 0xb0000000-0xbfffffff 64bit pref]
+[    0.281234] pci 0000:00:02.0: BAR 4 [io  0x5000-0x503f]
+[    0.281252] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.281481] pci 0000:00:03.0: [8086:160c] type 00 class 0x040300 PCIe Root Complex Integrated Endpoint
+[    0.281493] pci 0000:00:03.0: BAR 0 [mem 0xc3218000-0xc321bfff 64bit]
+[    0.281613] pci 0000:00:04.0: [8086:1603] type 00 class 0x118000 conventional PCI endpoint
+[    0.281625] pci 0000:00:04.0: BAR 0 [mem 0xc3210000-0xc3217fff 64bit]
+[    0.281755] pci 0000:00:14.0: [8086:9cb1] type 00 class 0x0c0330 conventional PCI endpoint
+[    0.281773] pci 0000:00:14.0: BAR 0 [mem 0xc3200000-0xc320ffff 64bit]
+[    0.281836] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.281943] pci 0000:00:16.0: [8086:9cba] type 00 class 0x078000 conventional PCI endpoint
+[    0.281964] pci 0000:00:16.0: BAR 0 [mem 0xc3221000-0xc322101f 64bit]
+[    0.282036] pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+[    0.282231] pci 0000:00:1b.0: [8086:9ca0] type 00 class 0x040300 conventional PCI endpoint
+[    0.282249] pci 0000:00:1b.0: BAR 0 [mem 0xc321c000-0xc321ffff 64bit]
+[    0.282311] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.282503] pci 0000:00:1c.0: [8086:9c90] type 01 class 0x060400 PCIe Root Port
+[    0.282530] pci 0000:00:1c.0: PCI bridge to [bus 01-06]
+[    0.282536] pci 0000:00:1c.0:   bridge window [io  0x4000-0x4fff]
+[    0.282540] pci 0000:00:1c.0:   bridge window [mem 0xc4000000-0xc4ffffff]
+[    0.282549] pci 0000:00:1c.0:   bridge window [mem 0xc0000000-0xc0ffffff 64bit pref]
+[    0.282603] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.282956] pci 0000:00:1c.2: [8086:9c94] type 01 class 0x060400 PCIe Root Port
+[    0.282984] pci 0000:00:1c.2: PCI bridge to [bus 07-0c]
+[    0.282989] pci 0000:00:1c.2:   bridge window [io  0x3000-0x3fff]
+[    0.282993] pci 0000:00:1c.2:   bridge window [mem 0xc2000000-0xc30fffff]
+[    0.283002] pci 0000:00:1c.2:   bridge window [mem 0xc3100000-0xc31fffff 64bit pref]
+[    0.283060] pci 0000:00:1c.2: PME# supported from D0 D3hot D3cold
+[    0.283187] pci 0000:00:1d.0: [8086:9ca6] type 00 class 0x0c0320 conventional PCI endpoint
+[    0.284966] pci 0000:00:1d.0: BAR 0 [mem 0xc3225000-0xc32253ff]
+[    0.286916] pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+[    0.287031] pci 0000:00:1f.0: [8086:9cc5] type 00 class 0x060100 conventional PCI endpoint
+[    0.287263] pci 0000:00:1f.2: [8086:9c83] type 00 class 0x010601 conventional PCI endpoint
+[    0.287277] pci 0000:00:1f.2: BAR 0 [io  0x5088-0x508f]
+[    0.287285] pci 0000:00:1f.2: BAR 1 [io  0x5094-0x5097]
+[    0.287292] pci 0000:00:1f.2: BAR 2 [io  0x5080-0x5087]
+[    0.287300] pci 0000:00:1f.2: BAR 3 [io  0x5090-0x5093]
+[    0.287307] pci 0000:00:1f.2: BAR 4 [io  0x5060-0x507f]
+[    0.287315] pci 0000:00:1f.2: BAR 5 [mem 0xc3224000-0xc32247ff]
+[    0.287352] pci 0000:00:1f.2: PME# supported from D3hot
+[    0.287439] pci 0000:00:1f.3: [8086:9ca2] type 00 class 0x0c0500 conventional PCI endpoint
+[    0.287456] pci 0000:00:1f.3: BAR 0 [mem 0xc3220000-0xc32200ff 64bit]
+[    0.287477] pci 0000:00:1f.3: BAR 4 [io  0x5040-0x505f]
+[    0.287580] pci 0000:00:1f.6: [8086:9ca4] type 00 class 0x118000 conventional PCI endpoint
+[    0.287610] pci 0000:00:1f.6: BAR 0 [mem 0xc3223000-0xc3223fff 64bit]
+[    0.287818] pci 0000:00:1c.0: PCI bridge to [bus 01-06]
+[    0.287890] pci 0000:07:00.0: [10ec:8136] type 00 class 0x020000 PCIe Endpoint
+[    0.287913] pci 0000:07:00.0: BAR 0 [io  0x3000-0x30ff]
+[    0.287942] pci 0000:07:00.0: BAR 2 [mem 0xc3000000-0xc3000fff 64bit]
+[    0.287961] pci 0000:07:00.0: BAR 4 [mem 0xc3100000-0xc3103fff 64bit pref]
+[    0.288075] pci 0000:07:00.0: supports D1 D2
+[    0.288077] pci 0000:07:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.288251] pci 0000:00:1c.2: PCI bridge to [bus 07-0c]
+[    0.353128] ACPI: PCI: Interrupt link LNKA configured for IRQ 7
+[    0.353178] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    0.353225] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    0.353269] ACPI: PCI: Interrupt link LNKD configured for IRQ 10
+[    0.353313] ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+[    0.353315] ACPI: PCI: Interrupt link LNKE disabled
+[    0.353358] ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+[    0.353359] ACPI: PCI: Interrupt link LNKF disabled
+[    0.353403] ACPI: PCI: Interrupt link LNKG configured for IRQ 11
+[    0.353447] ACPI: PCI: Interrupt link LNKH configured for IRQ 7
+[    0.354055] ACPI: EC: interrupt unblocked
+[    0.354057] ACPI: EC: event unblocked
+[    0.354060] ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.354062] ACPI: EC: GPE=0xa
+[    0.354064] ACPI: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC initialization complete
+[    0.354067] ACPI: \_SB_.PCI0.LPCB.EC0_: EC: Used to handle transactions and events
+[    0.354144] iommu: Default domain type: Translated
+[    0.354146] iommu: DMA domain TLB invalidation policy: lazy mode
+[    0.354451] SCSI subsystem initialized
+[    0.354500] libata version 3.00 loaded.
+[    0.354529] ACPI: bus type USB registered
+[    0.354546] usbcore: registered new interface driver usbfs
+[    0.354554] usbcore: registered new interface driver hub
+[    0.354563] usbcore: registered new device driver usb
+[    0.354634] EDAC MC: Ver: 3.0.0
+[    0.355032] PCI: Using ACPI for IRQ routing
+[    0.361006] PCI: pci_cache_line_size set to 64 bytes
+[    0.361044] e820: reserve RAM buffer [mem 0x0009ac00-0x0009ffff]
+[    0.361047] e820: reserve RAM buffer [mem 0x9bf71000-0x9bffffff]
+[    0.361049] e820: reserve RAM buffer [mem 0x9cfff000-0x9fffffff]
+[    0.361051] e820: reserve RAM buffer [mem 0x25f000000-0x25fffffff]
+[    0.361113] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.361116] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.361117] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.361123] vgaarb: loaded
+[    0.361438] wmi_bus wmi_bus-PNP0C14:00: [Firmware Info]: 8232DE3D-663D-4327-A8F4-E293ADB9BF05 has zero instances
+[    0.361441] wmi_bus wmi_bus-PNP0C14:00: [Firmware Info]: 8F1F6436-9F42-42C8-BADC-0E9424F20C9A has zero instances
+[    0.361442] wmi_bus wmi_bus-PNP0C14:00: [Firmware Info]: 8F1F6435-9F42-42C8-BADC-0E9424F20C9A has zero instances
+[    0.361444] wmi_bus wmi_bus-PNP0C14:00: [Firmware Info]: DF4E63B6-3BBC-4858-9737-C74F82F821F3 has zero instances
+[    0.361487] dcdbas dcdbas: Dell Systems Management Base Driver (version 5.6.0-3.4)
+[    0.361568] clocksource: Switched to clocksource tsc-early
+[    0.361653] pnp: PnP ACPI init
+[    0.361837] system 00:00: [io  0x0680-0x069f] has been reserved
+[    0.361841] system 00:00: [io  0xfd60-0xfd63] has been reserved
+[    0.361844] system 00:00: [io  0xffff] has been reserved
+[    0.361846] system 00:00: [io  0xffff] has been reserved
+[    0.361848] system 00:00: [io  0xffff] has been reserved
+[    0.361849] system 00:00: [io  0x1800-0x18fe] has been reserved
+[    0.361851] system 00:00: [io  0x164e-0x164f] has been reserved
+[    0.361955] system 00:02: [io  0x1854-0x1857] has been reserved
+[    0.422000] system 00:06: [mem 0xfed1c000-0xfed1ffff] has been reserved
+[    0.422005] system 00:06: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.422007] system 00:06: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.422009] system 00:06: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.422011] system 00:06: [mem 0xe0000000-0xefffffff] has been reserved
+[    0.422014] system 00:06: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.422016] system 00:06: [mem 0xfed90000-0xfed93fff] has been reserved
+[    0.422017] system 00:06: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    0.422020] system 00:06: [mem 0xff000000-0xff000fff] has been reserved
+[    0.422022] system 00:06: [mem 0xff010000-0xffffffff] could not be reserved
+[    0.422024] system 00:06: [mem 0xfee00000-0xfeefffff] could not be reserved
+[    0.422026] system 00:06: [mem 0xa0010000-0xa001ffff] has been reserved
+[    0.422028] system 00:06: [mem 0xa0000000-0xa000ffff] has been reserved
+[    0.422292] pnp: PnP ACPI: found 7 devices
+[    0.428235] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.428280] NET: Registered PF_INET protocol family
+[    0.428435] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.430746] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.430764] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.430781] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.430860] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.431360] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.431398] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.431421] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.431479] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.431497] pci 0000:00:1c.0: PCI bridge to [bus 01-06]
+[    0.431503] pci 0000:00:1c.0:   bridge window [io  0x4000-0x4fff]
+[    0.431508] pci 0000:00:1c.0:   bridge window [mem 0xc4000000-0xc4ffffff]
+[    0.431513] pci 0000:00:1c.0:   bridge window [mem 0xc0000000-0xc0ffffff 64bit pref]
+[    0.431519] pci 0000:00:1c.2: PCI bridge to [bus 07-0c]
+[    0.431523] pci 0000:00:1c.2:   bridge window [io  0x3000-0x3fff]
+[    0.431527] pci 0000:00:1c.2:   bridge window [mem 0xc2000000-0xc30fffff]
+[    0.431531] pci 0000:00:1c.2:   bridge window [mem 0xc3100000-0xc31fffff 64bit pref]
+[    0.431538] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.431540] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.431542] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.431544] pci_bus 0000:00: resource 7 [mem 0xa0000000-0xdfffffff window]
+[    0.431546] pci_bus 0000:00: resource 8 [mem 0xfe000000-0xfe113fff window]
+[    0.431549] pci_bus 0000:01: resource 0 [io  0x4000-0x4fff]
+[    0.431551] pci_bus 0000:01: resource 1 [mem 0xc4000000-0xc4ffffff]
+[    0.431552] pci_bus 0000:01: resource 2 [mem 0xc0000000-0xc0ffffff 64bit pref]
+[    0.431555] pci_bus 0000:07: resource 0 [io  0x3000-0x3fff]
+[    0.431556] pci_bus 0000:07: resource 1 [mem 0xc2000000-0xc30fffff]
+[    0.431558] pci_bus 0000:07: resource 2 [mem 0xc3100000-0xc31fffff 64bit pref]
+[    0.431742] pci 0000:00:14.0: can't derive routing for PCI INT A
+[    0.431744] pci 0000:00:14.0: PCI INT A: no GSI
+[    0.453351] pci 0000:00:1d.0: quirk_usb_early_handoff+0x0/0x7f0 took 19781 usecs
+[    0.453376] PCI: CLS 64 bytes, default 64
+[    0.453392] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.453393] software IO TLB: mapped [mem 0x0000000097f71000-0x000000009bf71000] (64MB)
+[    0.453397] ACPI: bus type thunderbolt registered
+[    0.457390] RAPL PMU: API unit is 2^-32 Joules, 4 fixed counters, 655360 ms ovfl timer
+[    0.457393] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[    0.457395] RAPL PMU: hw unit of domain package 2^-14 Joules
+[    0.457396] RAPL PMU: hw unit of domain dram 2^-14 Joules
+[    0.457397] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[    0.457961] Initialise system trusted keyrings
+[    0.458015] workingset: timestamp_bits=40 max_order=21 bucket_order=0
+[    0.458241] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.458360] fuse: init (API version 7.40)
+[    0.458544] Key type asymmetric registered
+[    0.458548] Asymmetric key parser 'x509' registered
+[    0.458568] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    0.458571] io scheduler mq-deadline registered
+[    0.458573] io scheduler kyber registered
+[    0.458586] io scheduler bfq registered
+[    0.459831] cpcihp_zt5550: ZT5550 CompactPCI Hot Plug Driver version: 0.2
+[    0.459851] cpcihp_generic: Generic port I/O CompactPCI Hot Plug Driver version: 0.1
+[    0.459854] cpcihp_generic: not configured, disabling.
+[    0.459868] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.536592] acpiphp_ibm: ibm_acpiphp_init: acpi_walk_namespace failed
+[    0.536643] switchtec: loaded.
+[    0.536656] SPI driver hx8357 has no spi_device_id for himax,hx8369
+[    0.537351] VIA Graphics Integration Chipset framebuffer 2.4 initializing
+[    0.537520] no IO addresses supplied
+[    0.537603] hgafb: HGA card not detected.
+[    0.537607] hgafb hgafb.0: probe with driver hgafb failed with error -22
+[    0.537699] usbcore: registered new interface driver udlfb
+[    0.537710] usbcore: registered new interface driver smscufx
+[    0.538043] ACPI: AC: AC Adapter [ACAD] (on-line)
+[    0.538148] input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:18/PNP0C0D:00/input/input0
+[    0.538189] ACPI: button: Lid Switch [LID0]
+[    0.538268] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    0.538343] ACPI: button: Power Button [PWRB]
+[    0.538406] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    0.538464] ACPI: button: Power Button [PWRF]
+[    0.539109] Monitor-Mwait will be used to enter C-1 state
+[    0.539113] Monitor-Mwait will be used to enter C-2 state
+[    0.539114] Monitor-Mwait will be used to enter C-3 state
+[    0.539116] ACPI: \_PR_.CPU0: Found 3 idle states
+[    0.539512] ACPI: \_PR_.CPU1: Found 3 idle states
+[    0.539679] ACPI: \_PR_.CPU2: Found 3 idle states
+[    0.539893] ACPI: \_PR_.CPU3: Found 3 idle states
+[    0.540251] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPCB.HEC.ECRD], AE_NOT_FOUND (20240322/psargs-332)
+[    0.540264] ACPI Error: Aborting method \_TZ.TZ00._TMP due to previous error (AE_NOT_FOUND) (20240322/psparse-529)
+[    0.540427] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPCB.HEC.ECRD], AE_NOT_FOUND (20240322/psargs-332)
+[    0.540437] ACPI Error: Aborting method \_TZ.TZ00._TMP due to previous error (AE_NOT_FOUND) (20240322/psparse-529)
+[    0.540523] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPCB.HEC.ECRD], AE_NOT_FOUND (20240322/psargs-332)
+[    0.540532] ACPI Error: Aborting method \_TZ.TZ01._TMP due to previous error (AE_NOT_FOUND) (20240322/psparse-529)
+[    0.540601] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPCB.HEC.ECRD], AE_NOT_FOUND (20240322/psargs-332)
+[    0.540609] ACPI Error: Aborting method \_TZ.TZ01._TMP due to previous error (AE_NOT_FOUND) (20240322/psparse-529)
+[    0.540760] thermal LNXTHERM:02: registered as thermal_zone0
+[    0.540763] ACPI: thermal: Thermal Zone [TZ02] (28 C)
+[    0.554378] Linux agpgart interface v0.103
+[    0.554466] ACPI: bus type drm_connector registered
+[    0.554476] [drm] radeon kernel modesetting enabled.
+[    0.554542] [drm] amdgpu kernel modesetting enabled.
+[    0.554638] amdgpu: Virtual CRAT table created for CPU
+[    0.554659] amdgpu: Topology: Add CPU node
+[    0.554935] i915 0000:00:02.0: [drm] Found BROADWELL/ULT (device ID 1606) display version 8.00
+[    0.555246] i915 0000:00:02.0: vgaarb: deactivate vga console
+[    0.555657] Console: switching to colour dummy device 80x25
+[    0.556661] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    0.623344] [drm] Initialized i915 1.6.0 for 0000:00:02.0 on minor 0
+[    0.625582] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    0.626208] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input3
+[    0.673419] ACPI: battery: Slot [BAT1] (battery present)
+[    1.037643] fbcon: i915drmfb (fb0) is primary device
+[    1.469286] tsc: Refined TSC clocksource calibration: 1899.999 MHz
+[    1.469294] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x36c6563e7a6, max_idle_ns: 881590602333 ns
+[    1.469607] clocksource: Switched to clocksource tsc
+[    2.140897] Console: switching to colour frame buffer device 170x48
+[    2.159829] i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+[    2.160077] usbcore: registered new interface driver udl
+[    2.160775] SPI driver ili9163 has no spi_device_id for newhaven,1.8-128160EF
+[    2.160859] SPI driver ssd130x-spi has no spi_device_id for sinowealth,sh1106
+[    2.160862] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1305
+[    2.160864] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1306
+[    2.160866] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1307
+[    2.160868] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1309
+[    2.160870] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1322
+[    2.160872] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1325
+[    2.160874] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1327
+[    2.160876] SPI driver ssd130x-spi has no spi_device_id for solomon,ssd1331
+[    2.162627] loop: module loaded
+[    2.162632] mtip32xx Version 1.3.1
+[    2.162634] Error creating debugfs parent
+[    2.163423] usbcore: registered new interface driver viperboard
+[    2.163467] usbcore: registered new interface driver dln2
+[    2.163564] Loading iSCSI transport class v2.0-870.
+[    2.163707] rdac: device handler registered
+[    2.163738] hp_sw: device handler registered
+[    2.163741] emc: device handler registered
+[    2.163768] alua: device handler registered
+[    2.163770] snic:Cisco SCSI NIC Driver, ver 0.0.1.18
+[    2.163847] iscsi: registered transport (tcp)
+[    2.163919] Adaptec aacraid driver 1.2.1[50983]-custom
+[    2.163938] aic94xx: Adaptec aic94xx SAS/SATA driver version 1.0.3 loaded
+[    2.163979] isci: Intel(R) C600 SAS Controller Driver - version 1.2.0
+[    2.164062] iscsi: registered transport (qla4xxx)
+[    2.164077] QLogic iSCSI HBA Driver
+[    2.164078] Emulex LightPulse Fibre Channel SCSI driver 14.4.0.3
+[    2.164080] Copyright (C) 2017-2024 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
+[    2.164147] QLogic BR-series BFA FC/FCOE SCSI driver - version: 3.2.25.1
+[    2.164164] csiostor: Chelsio FCoE driver 1.0.0-ko
+[    2.164216] Microchip SmartPQI Driver (v2.1.26-030)
+[    2.164297] megaraid cmm: 2.20.2.7 (Release Date: Sun Jul 16 00:01:03 EST 2006)
+[    2.164334] megaraid: 2.20.5.1 (Release Date: Thu Nov 16 15:32:35 EST 2006)
+[    2.164352] megasas: 07.727.03.00-rc1
+[    2.164378] mpt3sas version 48.100.00.00 loaded
+[    2.164470] Loading mpi3mr version 8.9.1.0.51
+[    2.164549] 3ware Storage Controller device driver for Linux v1.26.02.003.
+[    2.164563] 3ware 9000 Storage Controller device driver for Linux v2.26.02.014.
+[    2.164576] LSI 3ware SAS/SATA-RAID Controller device driver for Linux v3.26.02.000.
+[    2.164591] ipr: IBM Power RAID SCSI Device Driver version: 2.6.4 (March 14, 2017)
+[    2.164608] RocketRAID 3xxx/4xxx Controller driver v1.10.0
+[    2.164624] stex: Promise SuperTrak EX Driver version: 6.02.0000.01
+[    2.164665] libcxgbi:libcxgbi_init_module: Chelsio iSCSI driver library libcxgbi v0.9.1-ko (Apr. 2015)
+[    2.164669] Chelsio T3 iSCSI Driver cxgb3i v2.0.1-ko (Apr. 2015)
+[    2.164690] iscsi: registered transport (cxgb3i)
+[    2.164692] Chelsio T4-T6 iSCSI Driver cxgb4i v0.9.5-ko (Apr. 2015)
+[    2.164710] iscsi: registered transport (cxgb4i)
+[    2.164713] cxgb4i:cxgb4i_init_module: cxgb4i dcb enabled.
+[    2.164715] QLogic NetXtreme II iSCSI Driver bnx2i v2.7.10.1 (Jul 16, 2014)
+[    2.164734] iscsi: registered transport (bnx2i)
+[    2.165229] iscsi: registered transport (qedi)
+[    2.165767] iscsi: registered transport (be2iscsi)
+[    2.165769] In beiscsi_module_init, tt=00000000af67c517
+[    2.165831] VMware PVSCSI driver - version 1.0.7.0-k
+[    2.165856] st: Version 20160209, fixed bufsize 32768, s/g segs 256
+[    2.165909] SCSI Media Changer driver v0.25 
+[    2.166249] ahci 0000:00:1f.2: version 3.0
+[    2.176556] ahci 0000:00:1f.2: AHCI vers 0001.0300, 32 command slots, 6 Gbps, SATA mode
+[    2.176566] ahci 0000:00:1f.2: 1/2 ports implemented (port mask 0x1)
+[    2.176570] ahci 0000:00:1f.2: flags: 64bit ncq pm led clo only pio slum part deso sadm sds apst 
+[    2.177033] scsi host0: ahci
+[    2.177210] scsi host1: ahci
+[    2.177308] ata1: SATA max UDMA/133 abar m2048@0xc3224000 port 0xc3224100 irq 44 lpm-pol 3
+[    2.177313] ata2: DUMMY
+[    2.178504] scsi host2: pata_legacy
+[    2.178580] ata3: PATA max PIO4 cmd 0x1f0 ctl 0x3f6 irq 14 lpm-pol 0
+[    2.491896] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[    2.492094] ata1.00: ATA-11: MSI S270 240GB, SBFM61.5, max UDMA/133
+[    2.492148] ata1.00: 468862128 sectors, multi 16: LBA48 NCQ (depth 32), AA
+[    2.492853] ata1.00: configured for UDMA/133
+[    2.503091] scsi 0:0:0:0: Direct-Access     ATA      MSI S270 240GB   61.5 PQ: 0 ANSI: 5
+[    2.503369] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    2.503385] sd 0:0:0:0: [sda] 468862128 512-byte logical blocks: (240 GB/224 GiB)
+[    2.503413] sd 0:0:0:0: [sda] Write Protect is off
+[    2.503417] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    2.503437] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    2.503468] sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+[    2.517467]  sda: sda1 sda2
+[    2.517677] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.533678] scsi host2: pata_legacy
+[    2.533738] ata3: PATA max PIO4 cmd 0x170 ctl 0x376 irq 15 lpm-pol 0
+[    2.710298] cnic: QLogic cnicDriver v2.5.22 (July 20, 2015)
+[    2.710457] thunder_xcv, ver 1.0
+[    2.710470] thunder_bgx, ver 1.0
+[    2.710479] nicpf, ver 1.0
+[    2.710489] nicvf, ver 1.0
+[    3.741640] e100: Intel(R) PRO/100 Network Driver
+[    3.741644] e100: Copyright(c) 1999-2006 Intel Corporation
+[    3.741657] e1000: Intel(R) PRO/1000 Network Driver
+[    3.741658] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    3.741671] e1000e: Intel(R) PRO/1000 Network Driver
+[    3.741672] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    3.741686] igb: Intel(R) Gigabit Ethernet Network Driver
+[    3.741687] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    3.741699] Intel(R) 2.5G Ethernet Linux Driver
+[    3.741700] Copyright(c) 2018 Intel Corporation.
+[    3.741712] igbvf: Intel(R) Gigabit Virtual Function Network Driver
+[    3.741713] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    3.741724] ixgbe: Intel(R) 10 Gigabit PCI Express Network Driver
+[    3.741725] ixgbe: Copyright (c) 1999-2016 Intel Corporation.
+[    3.741777] i40e: Intel(R) Ethernet Connection XL710 Network Driver
+[    3.741780] i40e: Copyright (c) 2013 - 2019 Intel Corporation.
+[    3.741798] jme: JMicron JMC2XX ethernet driver version 1.0.8
+[    3.741836] sky2: driver version 1.30
+[    3.741994] myri10ge: Version 1.5.3-1.534
+[    3.742022] ns83820.c: National Semiconductor DP83820 10/100/1000 driver.
+[    3.742097] QLogic 1/10 GbE Converged/Intelligent Ethernet Driver v5.3.66
+[    3.742111] QLogic/NetXen Network Driver v4.0.82
+[    3.742122] QLogic FastLinQ 4xxxx Core Module qed
+[    3.742124] qede init: QLogic FastLinQ 4xxxx Ethernet Driver qede
+[    3.742276] r8169 0000:07:00.0: can't disable ASPM; OS doesn't have ASPM control
+[    5.645863] r8169 0000:07:00.0 eth0: RTL8106e, 30:8d:99:69:43:ae, XID 449, IRQ 45
+[    5.645975] Solarflare NET driver
+[    5.646145] Solarflare Falcon driver v4.1
+[    5.646415] tehuti: Tehuti Networks(R) Network Driver, 7.29.3
+[    5.646418] tehuti: Options: hw_csum 
+[    5.646430] tlan: ThunderLAN driver v1.17
+[    5.646440] tlan: 0 devices installed, PCI: 0  EISA: 0
+[    5.646605] VMware vmxnet3 virtual NIC driver - version 1.9.0.0-k-NAPI
+[    5.646623] usbcore: registered new interface driver catc
+[    5.646629] usbcore: registered new interface driver kaweth
+[    5.646631] pegasus: Pegasus/Pegasus II USB Ethernet driver
+[    5.646638] usbcore: registered new interface driver pegasus
+[    5.646644] usbcore: registered new interface driver rtl8150
+[    5.646650] usbcore: registered new device driver r8152-cfgselector
+[    5.646656] usbcore: registered new interface driver r8152
+[    5.646662] usbcore: registered new interface driver lan78xx
+[    5.646669] usbcore: registered new interface driver asix
+[    5.646675] usbcore: registered new interface driver ax88179_178a
+[    5.646682] usbcore: registered new interface driver cdc_ether
+[    5.646688] usbcore: registered new interface driver cdc_eem
+[    5.646693] usbcore: registered new interface driver dm9601
+[    5.646699] usbcore: registered new interface driver sr9700
+[    5.646706] usbcore: registered new interface driver CoreChips
+[    5.646712] usbcore: registered new interface driver smsc75xx
+[    5.646719] usbcore: registered new interface driver smsc95xx
+[    5.646725] usbcore: registered new interface driver gl620a
+[    5.646730] usbcore: registered new interface driver net1080
+[    5.646737] usbcore: registered new interface driver plusb
+[    5.646743] usbcore: registered new interface driver rndis_host
+[    5.646749] usbcore: registered new interface driver cdc_subset
+[    5.646755] usbcore: registered new interface driver zaurus
+[    5.646761] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[    5.646769] usbcore: registered new interface driver int51x1
+[    5.646775] usbcore: registered new interface driver kalmia
+[    5.646781] usbcore: registered new interface driver ipheth
+[    5.646786] usbcore: registered new interface driver sierra_net
+[    5.646793] usbcore: registered new interface driver cx82310_eth
+[    5.646799] usbcore: registered new interface driver cdc_ncm
+[    5.646806] usbcore: registered new interface driver huawei_cdc_ncm
+[    5.646812] usbcore: registered new interface driver lg-vl600
+[    5.646818] usbcore: registered new interface driver qmi_wwan
+[    5.646824] usbcore: registered new interface driver cdc_mbim
+[    5.646831] usbcore: registered new interface driver ch9200
+[    5.646837] usbcore: registered new interface driver aqc111
+[    5.646843] usbcore: registered new interface driver r8153_ecm
+[    5.646960] Fusion MPT base driver 3.04.20
+[    5.646961] Copyright (c) 1999-2008 LSI Corporation
+[    5.646966] Fusion MPT SPI Host driver 3.04.20
+[    5.646984] Fusion MPT FC Host driver 3.04.20
+[    5.646997] Fusion MPT SAS Host driver 3.04.20
+[    5.647011] Fusion MPT misc device (ioctl) driver 3.04.20
+[    5.647070] mptctl: Registered with Fusion MPT base driver
+[    5.647072] mptctl: /dev/mptctl @ (major,minor=10,220)
+[    5.647074] Fusion MPT LAN driver 3.04.20
+[    5.647451] ehci-pci 0000:00:1d.0: EHCI Host Controller
+[    5.647481] xhci_hcd 0000:00:14.0: can't derive routing for PCI INT A
+[    5.647485] xhci_hcd 0000:00:14.0: PCI INT A: no GSI
+[    5.647587] ehci-pci 0000:00:1d.0: new USB bus registered, assigned bus number 1
+[    5.647602] ehci-pci 0000:00:1d.0: debug port 2
+[    5.651522] ehci-pci 0000:00:1d.0: irq 23, io mem 0xc3225000
+[    5.665349] ehci-pci 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+[    5.665425] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.11
+[    5.665431] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.665433] usb usb1: Product: EHCI Host Controller
+[    5.665436] usb usb1: Manufacturer: Linux 6.11.11 ehci_hcd
+[    5.665437] usb usb1: SerialNumber: 0000:00:1d.0
+[    5.665608] hub 1-0:1.0: USB hub found
+[    5.665616] hub 1-0:1.0: 2 ports detected
+[    5.665812] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    5.665957] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    5.667010] xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x100 quirks 0x000000000004b810
+[    5.667120] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    5.667249] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+[    5.667256] xhci_hcd 0000:00:14.0: Host supports USB 3.0 SuperSpeed
+[    5.667293] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.11
+[    5.667297] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.667299] usb usb2: Product: xHCI Host Controller
+[    5.667301] usb usb2: Manufacturer: Linux 6.11.11 xhci-hcd
+[    5.667303] usb usb2: SerialNumber: 0000:00:14.0
+[    5.667547] hub 2-0:1.0: USB hub found
+[    5.667564] hub 2-0:1.0: 11 ports detected
+[    5.668136] usb usb3: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.11
+[    5.668141] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.668143] usb usb3: Product: xHCI Host Controller
+[    5.668145] usb usb3: Manufacturer: Linux 6.11.11 xhci-hcd
+[    5.668146] usb usb3: SerialNumber: 0000:00:14.0
+[    5.668364] hub 3-0:1.0: USB hub found
+[    5.668375] hub 3-0:1.0: 4 ports detected
+[    5.668708] SPI driver max3421-hcd has no spi_device_id for maxim,max3421
+[    5.668740] usbcore: registered new interface driver cdc_acm
+[    5.668742] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    5.668749] usbcore: registered new interface driver cdc_wdm
+[    5.668899] usbcore: registered new interface driver uas
+[    5.668917] usbcore: registered new interface driver usb-storage
+[    5.668924] usbcore: registered new interface driver ums-alauda
+[    5.668932] usbcore: registered new interface driver ums-cypress
+[    5.668938] usbcore: registered new interface driver ums-datafab
+[    5.668945] usbcore: registered new interface driver ums_eneub6250
+[    5.668951] usbcore: registered new interface driver ums-freecom
+[    5.668958] usbcore: registered new interface driver ums-isd200
+[    5.668965] usbcore: registered new interface driver ums-jumpshot
+[    5.668971] usbcore: registered new interface driver ums-karma
+[    5.668977] usbcore: registered new interface driver ums-onetouch
+[    5.668983] usbcore: registered new interface driver ums-realtek
+[    5.668990] usbcore: registered new interface driver ums-sddr09
+[    5.668996] usbcore: registered new interface driver ums-sddr55
+[    5.669002] usbcore: registered new interface driver ums-usbat
+[    5.669024] usbcore: registered new interface driver usbserial_generic
+[    5.669030] usbserial: USB Serial support registered for generic
+[    5.669038] usbcore: registered new interface driver aircable
+[    5.669043] usbserial: USB Serial support registered for aircable
+[    5.669051] usbcore: registered new interface driver ark3116
+[    5.669056] usbserial: USB Serial support registered for ark3116
+[    5.669064] usbcore: registered new interface driver belkin_sa
+[    5.669069] usbserial: USB Serial support registered for Belkin / Peracom / GoHubs USB Serial Adapter
+[    5.669078] usbcore: registered new interface driver ch341
+[    5.669084] usbserial: USB Serial support registered for ch341-uart
+[    5.669091] usbcore: registered new interface driver cp210x
+[    5.669097] usbserial: USB Serial support registered for cp210x
+[    5.669107] usbcore: registered new interface driver cyberjack
+[    5.669113] usbserial: USB Serial support registered for Reiner SCT Cyberjack USB card reader
+[    5.669120] usbcore: registered new interface driver cypress_m8
+[    5.669126] usbserial: USB Serial support registered for DeLorme Earthmate USB
+[    5.669131] usbserial: USB Serial support registered for HID->COM RS232 Adapter
+[    5.669137] usbserial: USB Serial support registered for Nokia CA-42 V2 Adapter
+[    5.669144] usbcore: registered new interface driver usb_debug
+[    5.669150] usbserial: USB Serial support registered for debug
+[    5.669155] usbserial: USB Serial support registered for xhci_dbc
+[    5.669163] usbcore: registered new interface driver digi_acceleport
+[    5.669168] usbserial: USB Serial support registered for Digi 2 port USB adapter
+[    5.669173] usbserial: USB Serial support registered for Digi 4 port USB adapter
+[    5.669182] usbcore: registered new interface driver io_edgeport
+[    5.669187] usbserial: USB Serial support registered for Edgeport 2 port adapter
+[    5.669192] usbserial: USB Serial support registered for Edgeport 4 port adapter
+[    5.669197] usbserial: USB Serial support registered for Edgeport 8 port adapter
+[    5.669202] usbserial: USB Serial support registered for EPiC device
+[    5.669211] usbcore: registered new interface driver io_ti
+[    5.669216] usbserial: USB Serial support registered for Edgeport TI 1 port adapter
+[    5.669222] usbserial: USB Serial support registered for Edgeport TI 2 port adapter
+[    5.669230] usbcore: registered new interface driver empeg
+[    5.669237] usbserial: USB Serial support registered for empeg
+[    5.669245] usbcore: registered new interface driver f81534a_ctrl
+[    5.669267] usbcore: registered new interface driver f81232
+[    5.669275] usbserial: USB Serial support registered for f81232
+[    5.669281] usbserial: USB Serial support registered for f81534a
+[    5.669289] usbcore: registered new interface driver f81534
+[    5.669294] usbserial: USB Serial support registered for Fintek F81532/F81534
+[    5.669302] usbcore: registered new interface driver ftdi_sio
+[    5.669308] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    5.669329] usbcore: registered new interface driver garmin_gps
+[    5.669334] usbserial: USB Serial support registered for Garmin GPS usb/tty
+[    5.669342] usbcore: registered new interface driver ipaq
+[    5.669347] usbserial: USB Serial support registered for PocketPC PDA
+[    5.669362] usbcore: registered new interface driver ipw
+[    5.669367] usbserial: USB Serial support registered for IPWireless converter
+[    5.669375] usbcore: registered new interface driver ir_usb
+[    5.669380] usbserial: USB Serial support registered for IR Dongle
+[    5.669389] usbcore: registered new interface driver iuu_phoenix
+[    5.669395] usbserial: USB Serial support registered for iuu_phoenix
+[    5.669402] usbcore: registered new interface driver keyspan
+[    5.669408] usbserial: USB Serial support registered for Keyspan - (without firmware)
+[    5.669414] usbserial: USB Serial support registered for Keyspan 1 port adapter
+[    5.669420] usbserial: USB Serial support registered for Keyspan 2 port adapter
+[    5.669425] usbserial: USB Serial support registered for Keyspan 4 port adapter
+[    5.669433] usbcore: registered new interface driver keyspan_pda
+[    5.669439] usbserial: USB Serial support registered for Keyspan PDA
+[    5.669445] usbserial: USB Serial support registered for Keyspan PDA - (prerenumeration)
+[    5.669453] usbcore: registered new interface driver kl5kusb105
+[    5.669458] usbserial: USB Serial support registered for KL5KUSB105D / PalmConnect
+[    5.669466] usbcore: registered new interface driver kobil_sct
+[    5.669471] usbserial: USB Serial support registered for KOBIL USB smart card terminal
+[    5.669479] usbcore: registered new interface driver mct_u232
+[    5.669484] usbserial: USB Serial support registered for MCT U232
+[    5.669492] usbcore: registered new interface driver metro_usb
+[    5.669497] usbserial: USB Serial support registered for Metrologic USB to Serial
+[    5.669505] usbcore: registered new interface driver mos7720
+[    5.669511] usbserial: USB Serial support registered for Moschip 2 port adapter
+[    5.669518] usbcore: registered new interface driver mos7840
+[    5.669524] usbserial: USB Serial support registered for Moschip 7840/7820 USB Serial Driver
+[    5.669532] usbcore: registered new interface driver mxuport
+[    5.669537] usbserial: USB Serial support registered for MOXA UPort
+[    5.669545] usbcore: registered new interface driver navman
+[    5.669551] usbserial: USB Serial support registered for navman
+[    5.669559] usbcore: registered new interface driver omninet
+[    5.669564] usbserial: USB Serial support registered for ZyXEL - omni.net usb
+[    5.669572] usbcore: registered new interface driver opticon
+[    5.669577] usbserial: USB Serial support registered for opticon
+[    5.669584] usbcore: registered new interface driver option
+[    5.669590] usbserial: USB Serial support registered for GSM modem (1-port)
+[    5.669621] usbcore: registered new interface driver oti6858
+[    5.669626] usbserial: USB Serial support registered for oti6858
+[    5.669634] usbcore: registered new interface driver pl2303
+[    5.669640] usbserial: USB Serial support registered for pl2303
+[    5.669649] usbcore: registered new interface driver qcaux
+[    5.669655] usbserial: USB Serial support registered for qcaux
+[    5.669663] usbcore: registered new interface driver qcserial
+[    5.669668] usbserial: USB Serial support registered for Qualcomm USB modem
+[    5.669678] usbcore: registered new interface driver quatech2
+[    5.669684] usbserial: USB Serial support registered for Quatech 2nd gen USB to Serial Driver
+[    5.669692] usbcore: registered new interface driver safe_serial
+[    5.669699] usbserial: USB Serial support registered for safe_serial
+[    5.669706] usbcore: registered new interface driver sierra
+[    5.669712] usbserial: USB Serial support registered for Sierra USB modem
+[    5.669722] usbcore: registered new interface driver usb_serial_simple
+[    5.669728] usbserial: USB Serial support registered for carelink
+[    5.669733] usbserial: USB Serial support registered for flashloader
+[    5.669739] usbserial: USB Serial support registered for funsoft
+[    5.669744] usbserial: USB Serial support registered for google
+[    5.669750] usbserial: USB Serial support registered for hp4x
+[    5.669756] usbserial: USB Serial support registered for kaufmann
+[    5.669762] usbserial: USB Serial support registered for libtransistor
+[    5.669768] usbserial: USB Serial support registered for moto_modem
+[    5.669774] usbserial: USB Serial support registered for motorola_tetra
+[    5.669779] usbserial: USB Serial support registered for nokia
+[    5.669785] usbserial: USB Serial support registered for novatel_gps
+[    5.669791] usbserial: USB Serial support registered for siemens_mpi
+[    5.669796] usbserial: USB Serial support registered for suunto
+[    5.669802] usbserial: USB Serial support registered for vivopay
+[    5.669807] usbserial: USB Serial support registered for zio
+[    5.669817] usbcore: registered new interface driver spcp8x5
+[    5.669823] usbserial: USB Serial support registered for SPCP8x5
+[    5.669831] usbcore: registered new interface driver ssu100
+[    5.669837] usbserial: USB Serial support registered for Quatech SSU-100 USB to Serial Driver
+[    5.669845] usbcore: registered new interface driver symbolserial
+[    5.669851] usbserial: USB Serial support registered for symbol
+[    5.669859] usbcore: registered new interface driver ti_usb_3410_5052
+[    5.669865] usbserial: USB Serial support registered for TI USB 3410 1 port adapter
+[    5.669871] usbserial: USB Serial support registered for TI USB 5052 2 port adapter
+[    5.669880] usbcore: registered new interface driver upd78f0730
+[    5.669886] usbserial: USB Serial support registered for upd78f0730
+[    5.669894] usbcore: registered new interface driver visor
+[    5.669900] usbserial: USB Serial support registered for Handspring Visor / Palm OS
+[    5.669906] usbserial: USB Serial support registered for Sony Clie 5.0
+[    5.669912] usbserial: USB Serial support registered for Sony Clie 3.5
+[    5.669920] usbcore: registered new interface driver wishbone_serial
+[    5.669926] usbserial: USB Serial support registered for wishbone_serial
+[    5.669933] usbcore: registered new interface driver whiteheat
+[    5.669940] usbserial: USB Serial support registered for Connect Tech - WhiteHEAT - (prerenumeration)
+[    5.669946] usbserial: USB Serial support registered for Connect Tech - WhiteHEAT
+[    5.669955] usbcore: registered new interface driver xr_serial
+[    5.669961] usbserial: USB Serial support registered for xr_serial
+[    5.669969] usbcore: registered new interface driver xsens_mt
+[    5.669975] usbserial: USB Serial support registered for xsens_mt
+[    5.669984] usbcore: registered new interface driver cypress_cy7c63
+[    5.669992] usbcore: registered new interface driver yurex
+[    5.670247] SPI driver max3420-udc has no spi_device_id for maxim,max3421-udc
+[    5.670396] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+[    5.690540] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    5.690548] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    5.690792] mousedev: PS/2 mouse device common for all mice
+[    5.691569] input: PC Speaker as /devices/platform/pcspkr/input/input4
+[    5.691764] rtc_cmos 00:01: RTC can wake from S4
+[    5.692106] rtc_cmos 00:01: registered as rtc0
+[    5.692142] rtc_cmos 00:01: setting system clock to 2025-05-04T17:44:23 UTC (1746380663)
+[    5.692172] rtc_cmos 00:01: alarms up to one month, 242 bytes nvram
+[    5.697295] EDAC igen6: v2.5.1
+[    5.697411] intel_pstate: Intel P-state driver initializing
+[    5.697827] sdhci: Secure Digital Host Controller Interface driver
+[    5.697834] sdhci: Copyright(c) Pierre Ossman
+[    5.697931] wbsd: Winbond W83L51xD SD/MMC card interface driver
+[    5.697934] wbsd: Copyright(c) Pierre Ossman
+[    5.698046] VUB300 Driver rom wait states = 1C irqpoll timeout = 0400
+[    5.698435] usbcore: registered new interface driver vub300
+[    5.698457] usbcore: registered new interface driver ushc
+[    5.698510] sdhci-pltfm: SDHCI platform and OF driver helper
+[    5.698906] leds_apu: No PC Engines APUv1 board detected. For APUv2,3 support, enable CONFIG_PCENGINES_APU2
+[    5.699000] leds_ss4200: no LED devices found
+[    5.699540] hid: raw HID events driver (C) Jiri Kosina
+[    5.699789] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input5
+[    5.701044] usbcore: registered new interface driver usbhid
+[    5.701048] usbhid: USB HID core driver
+[    5.701165] comedi: version 0.7.76 - http://www.comedi.org
+[    5.701302] comedi comedi0: comedi_test: 1000000 microvolt, 100000 microsecond waveform attached
+[    5.702516] comedi comedi0: driver 'comedi_test' has successfully auto-configured 'comedi_test'.
+[    5.703411] usbcore: registered new interface driver dt9812
+[    5.703426] usbcore: registered new interface driver ni6501
+[    5.703440] usbcore: registered new interface driver usbdux
+[    5.703455] usbcore: registered new interface driver usbduxfast
+[    5.703468] usbcore: registered new interface driver usbduxsigma
+[    5.703482] usbcore: registered new interface driver vmk80xx
+[    5.707688] alienware_wmi: alienware-wmi: No known WMI GUID found
+[    5.707789] dell_smbios: Unable to run on non-Dell system
+[    5.707827] dell_wmi_aio: No known WMI GUID found
+[    5.707857] dell_wmi_sysman: Unable to run on non-Dell system
+[    5.708877] cros_ec_lpcs: unsupported system.
+[    5.709400] surface_gpe: no compatible Microsoft Surface device found, exiting
+[    5.709640] NET: Registered PF_INET6 protocol family
+[    5.710209] Segment Routing with IPv6
+[    5.710220] In-situ OAM (IOAM) with IPv6
+[    5.710243] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    5.710399] NET: Registered PF_PACKET protocol family
+[    5.710408] Key type dns_resolver registered
+[    5.710773] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    5.710944] microcode: Current revision: 0x0000002d
+[    5.711144] IPI shorthand broadcast: enabled
+[    5.726352] sched_clock: Marking stable (5724001926, 1245434)->(8108138378, -2382891018)
+[    5.726421] Loading compiled-in X.509 certificates
+[    5.730901] Loaded X.509 cert 'Build time autogenerated kernel key: b9defe86d60fd68fe826c64b93b6ddf068c0de1b'
+[    5.733288] Demotion targets for Node 0: null
+[    5.733605] ### dt-test ### start of unittest - you will see error messages
+[    5.733857] ### dt-test ### EXPECT \ : Duplicate name in testcase-data, renamed to "duplicate-name#1"
+[    5.733889] Duplicate name in testcase-data, renamed to "duplicate-name#1"
+[    5.734502] ### dt-test ### EXPECT / : Duplicate name in testcase-data, renamed to "duplicate-name#1"
+[    5.734515] ### dt-test ### pass of_unittest_check_tree_linkage():272
+[    5.734517] ### dt-test ### pass of_unittest_check_tree_linkage():273
+[    5.734522] ### dt-test ### pass of_unittest_check_phandles():381
+[    5.734526] ### dt-test ### pass of_unittest_find_node_by_name():87
+[    5.734528] ### dt-test ### pass of_unittest_find_node_by_name():94
+[    5.734534] ### dt-test ### pass of_unittest_find_node_by_name():98
+[    5.734537] ### dt-test ### pass of_unittest_find_node_by_name():105
+[    5.734538] ### dt-test ### pass of_unittest_find_node_by_name():112
+[    5.734544] ### dt-test ### pass of_unittest_find_node_by_name():116
+[    5.734546] ### dt-test ### pass of_unittest_find_node_by_name():122
+[    5.734547] ### dt-test ### pass of_unittest_find_node_by_name():126
+[    5.734550] ### dt-test ### pass of_unittest_find_node_by_name():130
+[    5.734551] ### dt-test ### pass of_unittest_find_node_by_name():134
+[    5.734553] ### dt-test ### pass of_unittest_find_node_by_name():139
+[    5.734555] ### dt-test ### pass of_unittest_find_node_by_name():144
+[    5.734557] ### dt-test ### pass of_unittest_find_node_by_name():149
+[    5.734559] ### dt-test ### pass of_unittest_find_node_by_name():154
+[    5.734560] ### dt-test ### pass of_unittest_find_node_by_name():160
+[    5.734562] ### dt-test ### pass of_unittest_find_node_by_name():165
+[    5.734563] ### dt-test ### pass of_unittest_find_node_by_name():170
+[    5.734565] ### dt-test ### pass of_unittest_find_node_by_name():175
+[    5.734570] ### dt-test ### pass of_unittest_dynamic():201
+[    5.734571] ### dt-test ### pass of_unittest_dynamic():208
+[    5.734575] ### dt-test ### pass of_unittest_dynamic():214
+[    5.734577] ### dt-test ### pass of_unittest_dynamic():222
+[    5.734580] ### dt-test ### pass of_unittest_dynamic():226
+[    5.734584] ### dt-test ### pass of_unittest_dynamic():234
+[    5.734587] ### dt-test ### pass of_unittest_dynamic():236
+[    5.734595] ### dt-test ### pass of_unittest_parse_phandle_with_args():404
+[    5.734596] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734598] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734599] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734601] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734603] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734605] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734607] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734609] ### dt-test ### pass of_unittest_parse_phandle_with_args():458
+[    5.734610] ### dt-test ### pass of_unittest_parse_phandle_with_args():469
+[    5.734612] ### dt-test ### pass of_unittest_parse_phandle_with_args():472
+[    5.734613] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    5.734614] OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    5.734622] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    5.734623] ### dt-test ### pass of_unittest_parse_phandle_with_args():486
+[    5.734624] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    5.734626] OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    5.734632] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-a: could not get #phandle-cells-missing for /testcase-data/phandle-tests/provider1
+[    5.734633] ### dt-test ### pass of_unittest_parse_phandle_with_args():497
+[    5.734634] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-a: could not find phandle
+[    5.734636] OF: /testcase-data/phandle-tests/consumer-a: could not find phandle 12345678
+[    5.734641] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-a: could not find phandle
+[    5.734641] ### dt-test ### pass of_unittest_parse_phandle_with_args():511
+[    5.734643] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-a: could not find phandle
+[    5.734644] OF: /testcase-data/phandle-tests/consumer-a: could not find phandle 12345678
+[    5.734648] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-a: could not find phandle
+[    5.734649] ### dt-test ### pass of_unittest_parse_phandle_with_args():522
+[    5.734650] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-a: #phandle-cells = 3 found 1
+[    5.734652] OF: /testcase-data/phandle-tests/consumer-a: #phandle-cells = 3 found 1
+[    5.734657] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-a: #phandle-cells = 3 found 1
+[    5.734658] ### dt-test ### pass of_unittest_parse_phandle_with_args():536
+[    5.734659] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-a: #phandle-cells = 3 found 1
+[    5.734660] OF: /testcase-data/phandle-tests/consumer-a: #phandle-cells = 3 found 1
+[    5.734665] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-a: #phandle-cells = 3 found 1
+[    5.734665] ### dt-test ### pass of_unittest_parse_phandle_with_args():547
+[    5.734678] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():578
+[    5.734682] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734686] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734689] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734692] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734695] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734698] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734701] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734706] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734709] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():644
+[    5.734711] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():655
+[    5.734712] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-b: could not get #phandle-missing-cells for /testcase-data/phandle-tests/provider1
+[    5.734715] OF: /testcase-data/phandle-tests/consumer-b: could not get #phandle-missing-cells for /testcase-data/phandle-tests/provider1
+[    5.734722] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-b: could not get #phandle-missing-cells for /testcase-data/phandle-tests/provider1
+[    5.734722] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():668
+[    5.734724] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-b: could not find phandle 12345678
+[    5.734726] OF: /testcase-data/phandle-tests/consumer-b: could not find phandle 12345678
+[    5.734730] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-b: could not find phandle 12345678
+[    5.734731] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():681
+[    5.734732] ### dt-test ### EXPECT \ : OF: /testcase-data/phandle-tests/consumer-b: #phandle-cells = 2 found 1
+[    5.734734] OF: /testcase-data/phandle-tests/consumer-b: #phandle-cells = 2 found 1
+[    5.734739] ### dt-test ### EXPECT / : OF: /testcase-data/phandle-tests/consumer-b: #phandle-cells = 2 found 1
+[    5.734740] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():694
+[    5.734741] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():697
+[    5.734742] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():697
+[    5.734743] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():697
+[    5.734744] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():697
+[    5.734745] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():697
+[    5.734746] ### dt-test ### pass of_unittest_parse_phandle_with_args_map():697
+[    5.734751] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734755] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734758] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734761] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734764] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734767] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734769] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734770] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734771] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734772] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734774] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734775] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734776] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734778] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734779] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734781] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734782] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734784] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734785] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734786] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734787] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734789] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734790] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734792] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734793] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734795] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734796] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734798] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734799] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734800] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734802] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734803] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734804] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734806] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734807] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734808] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734809] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734811] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734812] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734813] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734815] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734816] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734818] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734820] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734821] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734823] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734824] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734825] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734827] ### dt-test ### pass of_unittest_printf_one():296
+[    5.734829] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734830] ### dt-test ### pass of_unittest_printf_one():306
+[    5.734833] ### dt-test ### pass of_unittest_property_string():717
+[    5.734835] ### dt-test ### pass of_unittest_property_string():719
+[    5.734836] ### dt-test ### pass of_unittest_property_string():721
+[    5.734837] ### dt-test ### pass of_unittest_property_string():723
+[    5.734838] ### dt-test ### pass of_unittest_property_string():725
+[    5.734840] ### dt-test ### pass of_unittest_property_string():727
+[    5.734841] ### dt-test ### pass of_unittest_property_string():729
+[    5.734842] ### dt-test ### pass of_unittest_property_string():733
+[    5.734843] ### dt-test ### pass of_unittest_property_string():735
+[    5.734845] ### dt-test ### pass of_unittest_property_string():737
+[    5.734846] ### dt-test ### pass of_unittest_property_string():739
+[    5.734847] ### dt-test ### pass of_unittest_property_string():743
+[    5.734848] ### dt-test ### pass of_unittest_property_string():746
+[    5.734850] ### dt-test ### pass of_unittest_property_string():748
+[    5.734851] ### dt-test ### pass of_unittest_property_string():750
+[    5.734852] ### dt-test ### pass of_unittest_property_string():752
+[    5.734854] ### dt-test ### pass of_unittest_property_string():755
+[    5.734855] ### dt-test ### pass of_unittest_property_string():758
+[    5.734856] ### dt-test ### pass of_unittest_property_string():760
+[    5.734857] ### dt-test ### pass of_unittest_property_string():763
+[    5.734859] ### dt-test ### pass of_unittest_property_string():768
+[    5.734860] ### dt-test ### pass of_unittest_property_string():770
+[    5.734861] ### dt-test ### pass of_unittest_property_string():772
+[    5.734862] ### dt-test ### pass of_unittest_property_string():775
+[    5.734864] ### dt-test ### pass of_unittest_property_string():779
+[    5.734865] ### dt-test ### pass of_unittest_property_string():782
+[    5.734866] ### dt-test ### pass of_unittest_property_copy():797
+[    5.734868] ### dt-test ### pass of_unittest_property_copy():801
+[    5.734870] ### dt-test ### pass of_unittest_changeset():823
+[    5.734871] ### dt-test ### pass of_unittest_changeset():826
+[    5.734872] ### dt-test ### pass of_unittest_changeset():829
+[    5.734875] ### dt-test ### pass of_unittest_changeset():833
+[    5.734876] ### dt-test ### pass of_unittest_changeset():836
+[    5.734877] ### dt-test ### pass of_unittest_changeset():839
+[    5.734878] ### dt-test ### pass of_unittest_changeset():842
+[    5.734880] ### dt-test ### pass of_unittest_changeset():845
+[    5.734882] ### dt-test ### pass of_unittest_changeset():848
+[    5.734883] ### dt-test ### pass of_unittest_changeset():856
+[    5.734884] ### dt-test ### pass of_unittest_changeset():860
+[    5.734885] ### dt-test ### pass of_unittest_changeset():861
+[    5.734887] ### dt-test ### pass of_unittest_changeset():863
+[    5.734888] ### dt-test ### pass of_unittest_changeset():864
+[    5.734889] ### dt-test ### pass of_unittest_changeset():866
+[    5.734890] ### dt-test ### pass of_unittest_changeset():867
+[    5.734891] ### dt-test ### pass of_unittest_changeset():869
+[    5.734892] ### dt-test ### pass of_unittest_changeset():871
+[    5.734894] ### dt-test ### pass of_unittest_changeset():872
+[    5.734895] ### dt-test ### pass of_unittest_changeset():873
+[    5.734896] ### dt-test ### pass of_unittest_changeset():875
+[    5.734898] ### dt-test ### pass of_unittest_changeset():876
+[    5.734900] ### dt-test ### pass of_unittest_changeset():878
+[    5.734901] ### dt-test ### pass of_unittest_changeset():882
+[    5.734925] ### dt-test ### pass of_unittest_changeset():886
+[    5.734928] ### dt-test ### pass of_unittest_changeset():891
+[    5.734931] ### dt-test ### pass of_unittest_changeset():894
+[    5.734945] ### dt-test ### pass of_unittest_changeset():898
+[    5.734948] ### dt-test ### pass of_unittest_changeset():900
+[    5.734949] ### dt-test ### pass of_unittest_changeset():904
+[    5.734950] ### dt-test ### pass of_unittest_changeset():907
+[    5.734951] ### dt-test ### pass of_unittest_changeset():909
+[    5.734957] ### dt-test ### pass of_unittest_changeset_prop():1037
+[    5.734959] ### dt-test ### pass of_unittest_changeset_prop():1041
+[    5.734961] ### dt-test ### pass of_unittest_changeset_prop():1045
+[    5.734962] ### dt-test ### pass of_unittest_changeset_prop():1048
+[    5.734964] ### dt-test ### pass of_unittest_changeset_prop():1052
+[    5.734965] ### dt-test ### pass of_unittest_changeset_prop():1055
+[    5.734974] ### dt-test ### pass of_unittest_changeset_prop():1060
+[    5.734977] ### dt-test ### pass of_unittest_changeset_prop():1064
+[    5.734978] ### dt-test ### pass changeset_check_string():928
+[    5.734979] ### dt-test ### pass changeset_check_string():931
+[    5.734981] ### dt-test ### pass changeset_check_string_array():947
+[    5.734982] ### dt-test ### pass changeset_check_string_array():950
+[    5.734983] ### dt-test ### pass changeset_check_string_array():957
+[    5.734984] ### dt-test ### pass changeset_check_string_array():960
+[    5.734986] ### dt-test ### pass changeset_check_string_array():957
+[    5.734987] ### dt-test ### pass changeset_check_string_array():960
+[    5.734988] ### dt-test ### pass changeset_check_string_array():957
+[    5.734989] ### dt-test ### pass changeset_check_string_array():960
+[    5.734990] ### dt-test ### pass changeset_check_u32():974
+[    5.734991] ### dt-test ### pass changeset_check_u32():977
+[    5.734992] ### dt-test ### pass changeset_check_u32_array():993
+[    5.734993] ### dt-test ### pass changeset_check_u32_array():996
+[    5.734995] ### dt-test ### pass changeset_check_u32_array():1003
+[    5.734996] ### dt-test ### pass changeset_check_u32_array():1006
+[    5.734997] ### dt-test ### pass changeset_check_u32_array():1003
+[    5.734998] ### dt-test ### pass changeset_check_u32_array():1006
+[    5.734999] ### dt-test ### pass changeset_check_u32_array():1003
+[    5.735000] ### dt-test ### pass changeset_check_u32_array():1006
+[    5.735001] ### dt-test ### pass changeset_check_u32_array():1003
+[    5.735002] ### dt-test ### pass changeset_check_u32_array():1006
+[    5.735003] ### dt-test ### pass changeset_check_u32_array():1003
+[    5.735004] ### dt-test ### pass changeset_check_u32_array():1006
+[    5.735006] ### dt-test ### pass changeset_check_bool():1015
+[    5.735011] ### dt-test ### pass of_unittest_changeset_prop():1077
+[    5.735018] ### dt-test ### pass of_unittest_parse_interrupts():1464
+[    5.735020] ### dt-test ### pass of_unittest_parse_interrupts():1464
+[    5.735023] ### dt-test ### pass of_unittest_parse_interrupts():1464
+[    5.735024] ### dt-test ### pass of_unittest_parse_interrupts():1464
+[    5.735029] ### dt-test ### pass of_unittest_parse_interrupts():1510
+[    5.735033] ### dt-test ### pass of_unittest_parse_interrupts():1510
+[    5.735036] ### dt-test ### pass of_unittest_parse_interrupts():1510
+[    5.735039] ### dt-test ### pass of_unittest_parse_interrupts():1510
+[    5.735042] ### dt-test ### pass of_unittest_parse_interrupts_extended():1590
+[    5.735044] ### dt-test ### pass of_unittest_parse_interrupts_extended():1590
+[    5.735046] ### dt-test ### pass of_unittest_parse_interrupts_extended():1590
+[    5.735049] ### dt-test ### pass of_unittest_parse_interrupts_extended():1590
+[    5.735052] ### dt-test ### pass of_unittest_parse_interrupts_extended():1590
+[    5.735055] ### dt-test ### pass of_unittest_parse_interrupts_extended():1590
+[    5.735059] ### dt-test ### pass of_unittest_parse_interrupts_extended():1590
+[    5.735080] ### dt-test ### pass of_unittest_dma_get_max_cpu_address():1100
+[    5.735088] ### dt-test ### pass of_unittest_dma_ranges_one():1121
+[    5.735090] ### dt-test ### pass of_unittest_dma_ranges_one():1139
+[    5.735091] ### dt-test ### pass of_unittest_dma_ranges_one():1142
+[    5.735099] ### dt-test ### pass of_unittest_dma_ranges_one():1121
+[    5.735101] ### dt-test ### pass of_unittest_dma_ranges_one():1139
+[    5.735102] ### dt-test ### pass of_unittest_dma_ranges_one():1142
+[    5.735118] ### dt-test ### pass of_unittest_dma_ranges_one():1121
+[    5.735119] ### dt-test ### pass of_unittest_dma_ranges_one():1139
+[    5.735120] ### dt-test ### pass of_unittest_dma_ranges_one():1142
+[    5.735127] ### dt-test ### pass of_unittest_pci_dma_ranges():1190
+[    5.735128] ### dt-test ### pass of_unittest_pci_dma_ranges():1193
+[    5.735129] ### dt-test ### pass of_unittest_pci_dma_ranges():1196
+[    5.735133] ### dt-test ### pass of_unittest_pci_dma_ranges():1200
+[    5.735134] ### dt-test ### pass of_unittest_pci_dma_ranges():1203
+[    5.735135] ### dt-test ### pass of_unittest_pci_dma_ranges():1206
+[    5.735142] ### dt-test ### pass of_unittest_bus_ranges():1236
+[    5.735144] ### dt-test ### pass of_unittest_bus_ranges():1238
+[    5.735145] ### dt-test ### pass of_unittest_bus_ranges():1241
+[    5.735146] ### dt-test ### pass of_unittest_bus_ranges():1244
+[    5.735147] ### dt-test ### pass of_unittest_bus_ranges():1249
+[    5.735150] ### dt-test ### pass of_unittest_bus_ranges():1257
+[    5.735151] ### dt-test ### pass of_unittest_bus_ranges():1261
+[    5.735152] ### dt-test ### pass of_unittest_bus_ranges():1264
+[    5.735153] ### dt-test ### pass of_unittest_bus_ranges():1267
+[    5.735156] ### dt-test ### pass of_unittest_bus_ranges():1257
+[    5.735157] ### dt-test ### pass of_unittest_bus_ranges():1271
+[    5.735158] ### dt-test ### pass of_unittest_bus_ranges():1274
+[    5.735159] ### dt-test ### pass of_unittest_bus_ranges():1277
+[    5.735166] ### dt-test ### pass of_unittest_bus_3cell_ranges():1310
+[    5.735167] ### dt-test ### pass of_unittest_bus_3cell_ranges():1313
+[    5.735168] ### dt-test ### pass of_unittest_bus_3cell_ranges():1316
+[    5.735169] ### dt-test ### pass of_unittest_bus_3cell_ranges():1319
+[    5.735172] ### dt-test ### pass of_unittest_bus_3cell_ranges():1323
+[    5.735174] ### dt-test ### pass of_unittest_bus_3cell_ranges():1326
+[    5.735175] ### dt-test ### pass of_unittest_bus_3cell_ranges():1329
+[    5.735176] ### dt-test ### pass of_unittest_bus_3cell_ranges():1332
+[    5.735179] ### dt-test ### pass of_unittest_reg():1355
+[    5.735180] ### dt-test ### pass of_unittest_reg():1357
+[    5.735188] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735189] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735193] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735194] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735199] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735200] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735204] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735205] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735213] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735214] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735219] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735220] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735225] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735226] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735231] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735233] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735238] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735239] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735248] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735249] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735255] ### dt-test ### pass of_unittest_check_addr():1391
+[    5.735256] ### dt-test ### pass of_unittest_check_addr():1393
+[    5.735260] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735264] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735267] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735270] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735273] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735277] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735280] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735283] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735287] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735290] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735293] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735296] ### dt-test ### pass of_unittest_match_node():1658
+[    5.735464] ### dt-test ### pass of_unittest_platform_populate():1682
+[    5.735471] ### dt-test ### pass of_unittest_platform_populate():1686
+[    5.735475] ### dt-test ### pass of_unittest_platform_populate():1692
+[    5.735476] ### dt-test ### EXPECT \ : platform testcase-data:testcase-device2: error -ENXIO: IRQ index 0 not found
+[    5.735479] platform testcase-data:testcase-device2: error -ENXIO: IRQ index 0 not found
+[    5.735482] ### dt-test ### EXPECT / : platform testcase-data:testcase-device2: error -ENXIO: IRQ index 0 not found
+[    5.735483] ### dt-test ### pass of_unittest_platform_populate():1702
+[    5.735485] ### dt-test ### pass of_unittest_platform_populate():1707
+[    5.735528] ### dt-test ### pass of_unittest_platform_populate():1713
+[    5.735834] ### dt-test ### pass of_unittest_platform_populate():1733
+[    5.735838] ### dt-test ### pass of_unittest_platform_populate():1733
+[    5.735901] ### dt-test ### pass of_unittest_platform_populate():1743
+[    5.735905] ### dt-test ### pass of_unittest_platform_populate():1743
+[    5.736361] ### dt-test ### pass of_unittest_overlay():3345
+[    5.736363] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest0/status
+[    5.736393] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest0/status
+[    5.736512] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest0/status
+[    5.736514] ### dt-test ### pass of_unittest_overlay_0():2483
+[    5.736517] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest1/status
+[    5.736540] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest1/status
+[    5.736595] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest1/status
+[    5.736596] ### dt-test ### pass of_unittest_overlay_1():2503
+[    5.736598] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest2/status
+[    5.736617] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest2/status
+[    5.736717] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest2/status
+[    5.736719] ### dt-test ### pass of_unittest_overlay_2():2523
+[    5.736721] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest3/status
+[    5.736749] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest3/status
+[    5.736801] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest3/status
+[    5.736802] ### dt-test ### pass of_unittest_overlay_3():2543
+[    5.736967] ### dt-test ### pass of_unittest_overlay_4():2553
+[    5.736970] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.736998] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.737162] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.737164] ### dt-test ### pass of_unittest_overlay_5():2573
+[    5.737167] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.737193] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.737972] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.737975] ### dt-test ### pass of_unittest_overlay_5():2573
+[    5.737978] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.738011] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.738173] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest5/status
+[    5.738175] ### dt-test ### pass of_unittest_overlay_5():2573
+[    5.738188] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest6/status
+[    5.738211] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest6/status
+[    5.738309] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest6/status
+[    5.738311] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest7/status
+[    5.738334] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest7/status
+[    5.738456] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest7/status
+[    5.738557] ### dt-test ### pass of_unittest_overlay_6():2674
+[    5.738558] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest8/status
+[    5.738572] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest8/status
+[    5.738669] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest8/status
+[    5.738671] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest8/property-foo
+[    5.738694] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest8/property-foo
+[    5.738706] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/test-unittest8/property-foo
+[    5.738707] ### dt-test ### EXPECT \ : OF: overlay: node_overlaps_later_cs: #6 overlaps with #7 @/testcase-data/overlay-node/test-bus/test-unittest8
+[    5.738709] ### dt-test ### EXPECT \ : OF: overlay: overlay #6 is not topmost
+[    5.738711] OF: overlay: node_overlaps_later_cs: #6 overlaps with #7 @/testcase-data/overlay-node/test-bus/test-unittest8
+[    5.738720] OF: overlay: overlay #6 is not topmost
+[    5.738722] ### dt-test ### EXPECT / : OF: overlay: overlay #6 is not topmost
+[    5.738724] ### dt-test ### EXPECT / : OF: overlay: node_overlaps_later_cs: #6 overlaps with #7 @/testcase-data/overlay-node/test-bus/test-unittest8
+[    5.738765] ### dt-test ### pass of_unittest_overlay_8():2767
+[    5.739192] ### dt-test ### pass of_unittest_overlay_10():2779
+[    5.739197] ### dt-test ### pass of_unittest_overlay_10():2785
+[    5.739204] ### dt-test ### pass of_unittest_overlay_10():2791
+[    5.739733] ### dt-test ### pass of_unittest_overlay_11():2803
+[    5.739753] ### dt-test ### pass of_unittest_overlay_i2c_init():3022
+[    5.740062] ### dt-test ### pass of_unittest_overlay_i2c_init():3028
+[    5.740065] ### dt-test ### EXPECT \ : i2c i2c-1: Added multiplexed i2c bus 2
+[    5.740259] i2c i2c-6: Added multiplexed i2c bus 7
+[    5.740286] ### dt-test ### EXPECT / : i2c i2c-1: Added multiplexed i2c bus 2
+[    5.740288] ### dt-test ### pass of_unittest_overlay_i2c_init():3042
+[    5.740290] ### dt-test ### pass of_unittest_overlay():3362
+[    5.740293] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/i2c-test-bus/test-unittest12/status
+[    5.740324] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/i2c-test-bus/test-unittest12/status
+[    5.740443] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/i2c-test-bus/test-unittest12/status
+[    5.740445] ### dt-test ### pass of_unittest_overlay_i2c_12():3075
+[    5.740447] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/i2c-test-bus/test-unittest13/status
+[    5.740471] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/i2c-test-bus/test-unittest13/status
+[    5.740532] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data/overlay-node/test-bus/i2c-test-bus/test-unittest13/status
+[    5.740533] ### dt-test ### pass of_unittest_overlay_i2c_13():3095
+[    5.740534] ### dt-test ### EXPECT \ : i2c i2c-1: Added multiplexed i2c bus 3
+[    5.741176] i2c i2c-6: Added multiplexed i2c bus 8
+[    5.741212] ### dt-test ### EXPECT / : i2c i2c-1: Added multiplexed i2c bus 3
+[    5.741214] ### dt-test ### pass of_unittest_overlay_i2c_15():3119
+[    5.741852] ### dt-test ### pass of_unittest_overlay_gpio():2117
+[    5.742119] ### dt-test ### pass of_unittest_overlay_gpio():2120
+[    5.742250] ### dt-test ### pass of_unittest_overlay_gpio():2123
+[    5.742379] ### dt-test ### pass unittest_gpio_probe():2046
+[    5.742491] ### dt-test ### pass unittest_gpio_probe():2046
+[    5.742511] ### dt-test ### pass of_unittest_overlay_gpio():2127
+[    5.742513] ### dt-test ### pass of_unittest_overlay_gpio():2130
+[    5.742515] ### dt-test ### pass of_unittest_overlay_gpio():2133
+[    5.743071] ### dt-test ### pass unittest_gpio_probe():2046
+[    5.743103] ### dt-test ### pass of_unittest_overlay_gpio():2156
+[    5.743105] ### dt-test ### pass of_unittest_overlay_gpio():2159
+[    5.743107] ### dt-test ### pass of_unittest_overlay_gpio():2162
+[    5.743577] ### dt-test ### pass unittest_gpio_probe():2046
+[    5.743603] ### dt-test ### pass of_unittest_overlay_gpio():2180
+[    5.743606] ### dt-test ### pass of_unittest_overlay_gpio():2183
+[    5.743780] ### dt-test ### pass of_unittest_overlay_gpio():2197
+[    5.743782] ### dt-test ### pass of_unittest_overlay_gpio():2200
+[    5.744623] ### dt-test ### pass of_unittest_overlay_notify():3207
+[    5.744626] ### dt-test ### EXPECT \ : OF: overlay: overlay changeset pre-apply notifier error -16, target: /testcase-data/overlay-node/test-bus
+[    5.744659] OF: overlay: overlay changeset pre-apply notifier error -16, target: /testcase-data/overlay-node/test-bus
+[    5.744667] ### dt-test ### pass of_unittest_overlay_notify():3228
+[    5.744668] ### dt-test ### EXPECT / : OF: overlay: overlay changeset pre-apply notifier error -16, target: /testcase-data/overlay-node/test-bus
+[    5.744669] ### dt-test ### pass of_unittest_overlay_notify():3233
+[    5.744671] ### dt-test ### EXPECT \ : OF: overlay: overlay changeset post-apply notifier error -17, target: /testcase-data/overlay-node/test-bus
+[    5.744818] OF: overlay: overlay changeset post-apply notifier error -17, target: /testcase-data/overlay-node/test-bus
+[    5.744870] ### dt-test ### pass of_unittest_overlay_notify():3239
+[    5.744872] ### dt-test ### EXPECT / : OF: overlay: overlay changeset post-apply notifier error -17, target: /testcase-data/overlay-node/test-bus
+[    5.744874] ### dt-test ### pass of_unittest_overlay_notify():3244
+[    5.745028] ### dt-test ### pass of_unittest_overlay_notify():3248
+[    5.745031] ### dt-test ### pass of_unittest_overlay_notify():3251
+[    5.745033] ### dt-test ### EXPECT \ : OF: overlay: overlay changeset pre-remove notifier error -18, target: /testcase-data/overlay-node/test-bus
+[    5.745035] OF: overlay: overlay changeset pre-remove notifier error -18, target: /testcase-data/overlay-node/test-bus
+[    5.745042] ### dt-test ### EXPECT / : OF: overlay: overlay changeset pre-remove notifier error -18, target: /testcase-data/overlay-node/test-bus
+[    5.745043] ### dt-test ### pass of_unittest_overlay_notify():3262
+[    5.745046] ### dt-test ### pass of_unittest_overlay_notify():3270
+[    5.745212] ### dt-test ### pass of_unittest_overlay_notify():3274
+[    5.745215] ### dt-test ### pass of_unittest_overlay_notify():3277
+[    5.745217] ### dt-test ### EXPECT \ : OF: overlay: overlay changeset post-remove notifier error -19, target: /testcase-data/overlay-node/test-bus
+[    5.745979] OF: overlay: overlay changeset post-remove notifier error -19, target: /testcase-data/overlay-node/test-bus
+[    5.745987] ### dt-test ### EXPECT / : OF: overlay: overlay changeset post-remove notifier error -19, target: /testcase-data/overlay-node/test-bus
+[    5.745988] ### dt-test ### pass of_unittest_overlay_notify():3284
+[    5.745990] ### dt-test ### pass of_unittest_overlay_notify():3291
+[    5.746158] ### dt-test ### pass of_unittest_overlay_notify():3296
+[    5.746204] ### dt-test ### pass of_unittest_overlay_notify():3308
+[    5.746208] ### dt-test ### pass of_unittest_lifecycle():3410
+[    5.746210] ### dt-test ### EXPECT \ : OF: ERROR: of_node_release() detected bad of_node_put() on /testcase-data/refcount-node
+[    5.746211] ### dt-test ### pass of_unittest_lifecycle():3435
+[    5.746215] OF: ERROR: of_node_release() detected bad of_node_put() on /testcase-data/refcount-node
+[    5.746220] ### dt-test ### EXPECT / : OF: ERROR: of_node_release() detected bad of_node_put() on /testcase-data/refcount-node
+[    5.746221] ### dt-test ### EXPECT \ : ------------[ cut here ]------------
+[    5.746223] ### dt-test ### EXPECT \ : WARNING: <<all>>
+[    5.746224] ### dt-test ### EXPECT \ : refcount_t: underflow; use-after-free.
+[    5.746226] ### dt-test ### EXPECT \ : ---[ end trace <<int>> ]---
+[    5.746227] ### dt-test ### pass of_unittest_lifecycle():3455
+[    5.746230] ------------[ cut here ]------------
+[    5.746231] refcount_t: underflow; use-after-free.
+[    5.746244] WARNING: CPU: 1 PID: 1 at lib/refcount.c:28 refcount_warn_saturate+0xbe/0x110
+[    5.746251] Modules linked in:
+[    5.746254] CPU: 1 UID: 0 PID: 1 Comm: swapper/0 Tainted: G                 N 6.11.11 #2
+[    5.746259] Tainted: [N]=TEST
+[    5.746260] Hardware name: Hewlett-Packard HP Notebook/80C1, BIOS F.30 12/24/2019
+[    5.746261] RIP: 0010:refcount_warn_saturate+0xbe/0x110
+[    5.746265] Code: 03 01 e8 85 49 c0 ff 0f 0b c3 cc cc cc cc 80 3d 91 1b 20 03 00 75 85 48 c7 c7 58 b5 d1 9f c6 05 81 1b 20 03 01 e8 62 49 c0 ff <0f> 0b c3 cc cc cc cc 80 3d 6f 1b 20 03 00 0f 85 5e ff ff ff 48 c7
+[    5.746267] RSP: 0018:ffffa8d00005fde8 EFLAGS: 00010282
+[    5.746270] RAX: 0000000000000000 RBX: 0000000000000009 RCX: 0000000000000000
+[    5.746271] RDX: 0000000000000000 RSI: ffffa8d00005fca0 RDI: 0000000000000001
+[    5.746273] RBP: ffff99e61183c930 R08: 00000000ffffefff R09: 0000000000000001
+[    5.746275] R10: 00000000ffffefff R11: ffffffffa0065f60 R12: ffffffff9fcba783
+[    5.746276] R13: 0000000000000000 R14: ffff99e64adc2800 R15: ffffffff9fcba783
+[    5.746278] FS:  0000000000000000(0000) GS:ffff99e756c80000(0000) knlGS:0000000000000000
+[    5.746280] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[    5.746282] CR2: 00007f0af71ca480 CR3: 0000000139244001 CR4: 00000000000706f0
+[    5.746284] Call Trace:
+[    5.746286]  <TASK>
+[    5.746288]  ? __warn+0x6a/0xc0
+[    5.746292]  ? refcount_warn_saturate+0xbe/0x110
+[    5.746295]  ? report_bug+0x142/0x180
+[    5.746298]  ? handle_bug+0x53/0x90
+[    5.746301]  ? exc_invalid_op+0x17/0x70
+[    5.746303]  ? asm_exc_invalid_op+0x1a/0x20
+[    5.746309]  ? refcount_warn_saturate+0xbe/0x110
+[    5.746312]  ? refcount_warn_saturate+0xbe/0x110
+[    5.746314]  of_unittest+0x17dd/0x3030
+[    5.746319]  ? __pfx_of_unittest+0x10/0x10
+[    5.746322]  do_one_initcall+0x83/0x200
+[    5.746325]  kernel_init_freeable+0x185/0x220
+[    5.746330]  ? __pfx_kernel_init+0x10/0x10
+[    5.746332]  kernel_init+0x15/0x1b0
+[    5.746335]  ret_from_fork+0x2f/0x50
+[    5.746340]  ? __pfx_kernel_init+0x10/0x10
+[    5.746342]  ret_from_fork_asm+0x1a/0x30
+[    5.746344]  </TASK>
+[    5.746345] ---[ end trace 0000000000000000 ]---
+[    5.746347] ### dt-test ### EXPECT / : ---[ end trace <<int>> ]---
+[    5.746348] ### dt-test ### EXPECT / : refcount_t: underflow; use-after-free.
+[    5.746349] ### dt-test ### EXPECT / : WARNING: <<all>>
+[    5.746350] ### dt-test ### EXPECT / : ------------[ cut here ]------------
+[    5.746351] ### dt-test ### EXPECT_NOT \ : ------------[ cut here ]------------
+[    5.746352] ### dt-test ### EXPECT_NOT \ : WARNING: <<all>>
+[    5.746352] ### dt-test ### EXPECT_NOT \ : refcount_t: underflow; use-after-free.
+[    5.746353] ### dt-test ### EXPECT_NOT \ : ---[ end trace <<int>> ]---
+[    5.746354] ### dt-test ### pass of_unittest_lifecycle():3472
+[    5.746356] ### dt-test ### EXPECT_NOT / : ---[ end trace <<int>> ]---
+[    5.746357] ### dt-test ### EXPECT_NOT / : refcount_t: underflow; use-after-free.
+[    5.746357] ### dt-test ### EXPECT_NOT / : WARNING: <<all>>
+[    5.746358] ### dt-test ### EXPECT_NOT / : ------------[ cut here ]------------
+[    5.746360] ### dt-test ### pass of_unittest_lifecycle():3498
+[    5.746361] ### dt-test ### pass of_unittest_lifecycle():3499
+[    5.746374] ### dt-test ### pass of_unittest_check_tree_linkage():272
+[    5.746375] ### dt-test ### pass of_unittest_check_tree_linkage():273
+[    5.746440] Duplicate name in __symbols__, renamed to "electric_1#1"
+[    5.746445] Duplicate name in __symbols__, renamed to "hvac_1#1"
+[    5.746448] Duplicate name in __symbols__, renamed to "spin_ctrl_1#1"
+[    5.746452] Duplicate name in __symbols__, renamed to "spin_ctrl_2#1"
+[    5.746455] Duplicate name in __symbols__, renamed to "rides_1#1"
+[    5.746458] Duplicate name in __symbols__, renamed to "lights_1#1"
+[    5.746462] Duplicate name in __symbols__, renamed to "lights_2#1"
+[    5.746465] Duplicate name in __symbols__, renamed to "retail_1#1"
+[    5.746467] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/substation@100/status
+[    5.746468] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/status
+[    5.746469] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/ride@100/track@30/incline-up
+[    5.746470] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/ride@100/track@40/incline-up
+[    5.746471] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/status
+[    5.746472] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/color
+[    5.746473] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/rate
+[    5.746473] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/hvac_2
+[    5.746474] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200
+[    5.746475] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200_left
+[    5.746476] ### dt-test ### EXPECT \ : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200_right
+[    5.746543] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/substation@100/status
+[    5.746551] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/status
+[    5.746555] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/ride@100/track@30/incline-up
+[    5.746561] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/ride@100/track@40/incline-up
+[    5.746574] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/status
+[    5.746578] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/color
+[    5.746581] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/rate
+[    5.746588] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/hvac_2
+[    5.746595] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200
+[    5.746601] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200_left
+[    5.746606] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200_right
+[    5.747244] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200_right
+[    5.747245] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200_left
+[    5.747246] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ride_200
+[    5.747247] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/hvac_2
+[    5.747248] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/rate
+[    5.747249] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/color
+[    5.747250] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/lights@40000/status
+[    5.747251] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/ride@100/track@40/incline-up
+[    5.747252] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/ride@100/track@30/incline-up
+[    5.747253] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/fairway-1/status
+[    5.747254] ### dt-test ### EXPECT / : OF: overlay: WARNING: memory leak will occur if overlay removed, property: /testcase-data-2/substation@100/status
+[    5.747255] ### dt-test ### pass of_unittest_overlay_high_level():3953
+[    5.747256] ### dt-test ### EXPECT \ : OF: overlay: ERROR: multiple fragments add and/or delete node /testcase-data-2/substation@100/motor-1/controller
+[    5.747257] ### dt-test ### EXPECT \ : OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/controller/name
+[    5.747258] ### dt-test ### EXPECT \ : OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/motor-1/controller:name
+[    5.747259] ### dt-test ### EXPECT \ : OF: Error reverting changeset (-19)
+[    5.747297] OF: overlay: ERROR: multiple fragments add and/or delete node /testcase-data-2/substation@100/motor-1/controller
+[    5.747338] OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/controller/name
+[    5.747350] OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/motor-1/controller:name
+[    5.747355] OF: Error reverting changeset (-19)
+[    5.747357] ### dt-test ### pass of_unittest_overlay_high_level():3966
+[    5.747358] ### dt-test ### EXPECT / : OF: Error reverting changeset (-19)
+[    5.747359] ### dt-test ### EXPECT / : OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/motor-1/controller:name
+[    5.747360] ### dt-test ### EXPECT / : OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/controller/name
+[    5.747361] ### dt-test ### EXPECT / : OF: overlay: ERROR: multiple fragments add and/or delete node /testcase-data-2/substation@100/motor-1/controller
+[    5.747362] ### dt-test ### EXPECT \ : OF: overlay: ERROR: multiple fragments add and/or delete node /testcase-data-2/substation@100/motor-1/electric
+[    5.747363] ### dt-test ### EXPECT \ : OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/electric/rpm_avail
+[    5.747364] ### dt-test ### EXPECT \ : OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/electric/name
+[    5.747365] ### dt-test ### EXPECT \ : OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/motor-1/electric:name
+[    5.747366] ### dt-test ### EXPECT \ : OF: Error reverting changeset (-19)
+[    5.747396] OF: overlay: ERROR: multiple fragments add and/or delete node /testcase-data-2/substation@100/motor-1/electric
+[    5.747415] OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/electric/rpm_avail
+[    5.747434] OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/electric/name
+[    5.747446] OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/motor-1/electric:name
+[    5.747450] OF: Error reverting changeset (-19)
+[    5.747451] ### dt-test ### pass of_unittest_overlay_high_level():3991
+[    5.747453] ### dt-test ### EXPECT / : OF: Error reverting changeset (-19)
+[    5.747453] ### dt-test ### EXPECT / : OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/motor-1/electric:name
+[    5.747454] ### dt-test ### EXPECT / : OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/electric/name
+[    5.747455] ### dt-test ### EXPECT / : OF: overlay: ERROR: multiple fragments add, update, and/or delete property /testcase-data-2/substation@100/motor-1/electric/rpm_avail
+[    5.747456] ### dt-test ### EXPECT / : OF: overlay: ERROR: multiple fragments add and/or delete node /testcase-data-2/substation@100/motor-1/electric
+[    5.747474] ### dt-test ### pass of_unittest_overlay_high_level():4007
+[    5.747476] ### dt-test ### EXPECT \ : OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/hvac-medium-2:name
+[    5.747476] ### dt-test ### EXPECT \ : OF: Error reverting changeset (-19)
+[    5.747495] OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/hvac-medium-2:name
+[    5.747499] OF: Error reverting changeset (-19)
+[    5.747500] ### dt-test ### pass of_unittest_overlay_high_level():4017
+[    5.747501] ### dt-test ### EXPECT / : OF: Error reverting changeset (-19)
+[    5.747502] ### dt-test ### EXPECT / : OF: changeset: apply failed: REMOVE_PROPERTY /testcase-data-2/substation@100/hvac-medium-2:name
+[    5.747503] ### dt-test ### EXPECT \ : OF: resolver: node label 'this_label_does_not_exist' not found in live devicetree symbols table
+[    5.747504] ### dt-test ### EXPECT \ : OF: resolver: overlay phandle fixup failed: -22
+[    5.747514] OF: resolver: node label 'this_label_does_not_exist' not found in live devicetree symbols table
+[    5.747515] OF: resolver: overlay phandle fixup failed: -22
+[    5.747517] ### dt-test ### pass of_unittest_overlay_high_level():4032
+[    5.747518] ### dt-test ### EXPECT / : OF: resolver: overlay phandle fixup failed: -22
+[    5.747519] ### dt-test ### EXPECT / : OF: resolver: node label 'this_label_does_not_exist' not found in live devicetree symbols table
+[    5.747520] ### dt-test ### end of unittest - 376 passed, 0 failed
+[    5.747555] clk: Disabling unused clocks
+[    5.786450] Freeing unused kernel image (initmem) memory: 255364K
+[    5.786786] Write protecting the kernel read-only data: 53248k
+[    5.787107] Freeing unused kernel image (rodata/data gap) memory: 120K
+[    5.787156] Run /init as init process
+[    5.787158]   with arguments:
+[    5.787159]     /init
+[    5.787161]   with environment:
+[    5.787162]     HOME=/
+[    5.787163]     TERM=linux
+[    5.787164]     nwipe_options=--method=dodshort
+[    5.925322] usb 2-1: new high-speed USB device number 2 using xhci_hcd
+[    5.932159] usb 1-1: new high-speed USB device number 2 using ehci-pci
+[    6.008096] RTL8208 Fast Ethernet r8169-0-700:00: attached PHY driver (mii_bus:phy_addr=r8169-0-700:00, irq=MAC)
+[    6.076595] usb 2-1: New USB device found, idVendor=346d, idProduct=5678, bcdDevice= 2.00
+[    6.076611] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    6.076616] usb 2-1: Product: Disk 2.0
+[    6.076620] usb 2-1: Manufacturer: USB
+[    6.076624] usb 2-1: SerialNumber: 7191221160115443759
+[    6.078125] usb-storage 2-1:1.0: USB Mass Storage device detected
+[    6.078789] scsi host2: usb-storage 2-1:1.0
+[    6.085752] usb 1-1: New USB device found, idVendor=8087, idProduct=8001, bcdDevice= 0.03
+[    6.085763] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    6.086243] hub 1-1:1.0: USB hub found
+[    6.086366] hub 1-1:1.0: 8 ports detected
+[    6.205355] usb 2-2: new high-speed USB device number 3 using xhci_hcd
+[    6.283526] r8169 0000:07:00.0 eth0: Link is Down
+[    6.359412] usb 2-2: New USB device found, idVendor=346d, idProduct=5678, bcdDevice= 2.00
+[    6.359427] usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    6.359433] usb 2-2: Product: Disk 2.0
+[    6.359437] usb 2-2: Manufacturer: USB
+[    6.359441] usb 2-2: SerialNumber: 1424601187779336465
+[    6.360822] usb-storage 2-2:1.0: USB Mass Storage device detected
+[    6.361425] scsi host3: usb-storage 2-2:1.0
+[    6.423820] psmouse serio1: synaptics: queried max coordinates: x [..5652], y [..4846]
+[    6.453824] psmouse serio1: synaptics: queried min coordinates: x [1330..], y [1094..]
+[    6.453843] psmouse serio1: synaptics: The touchpad can support a better bus than the too old PS/2 protocol. Make sure MOUSE_PS2_SYNAPTICS_SMBUS and RMI4_SMB are enabled to get a better touchpad experience.
+[    6.493380] usb 2-5: new high-speed USB device number 4 using xhci_hcd
+[    6.512660] psmouse serio1: synaptics: Touchpad model: 1, fw: 8.1, id: 0x1e2b1, caps: 0xf00123/0x840300/0x2e800/0x0, board id: 3127, fw id: 8526786
+[    6.550108] input: SynPS/2 Synaptics TouchPad as /devices/platform/i8042/serio1/input/input7
+[    6.649948] usb 2-5: New USB device found, idVendor=04f2, idProduct=b509, bcdDevice=28.74
+[    6.649963] usb 2-5: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.649969] usb 2-5: Product: HP Truevision HD
+[    6.649973] usb 2-5: Manufacturer: SunplusIT Inc
+[    7.102429] scsi 2:0:0:0: Direct-Access     VendorCo ProductCode      2.00 PQ: 0 ANSI: 4
+[    7.103124] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[    7.106610] sd 2:0:0:0: [sdb] 15728640 512-byte logical blocks: (8.05 GB/7.50 GiB)
+[    7.106758] sd 2:0:0:0: [sdb] Write Protect is off
+[    7.106760] sd 2:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[    7.106895] sd 2:0:0:0: [sdb] No Caching mode page found
+[    7.106897] sd 2:0:0:0: [sdb] Assuming drive cache: write through
+[    7.126703]  sdb:
+[    7.126756] sd 2:0:0:0: [sdb] Attached SCSI removable disk
+[    7.390251] scsi 3:0:0:0: Direct-Access     VendorCo ProductCode      2.00 PQ: 0 ANSI: 4
+[    7.390854] sd 3:0:0:0: Attached scsi generic sg2 type 0
+[    7.394284] sd 3:0:0:0: [sdc] 30720000 512-byte logical blocks: (15.7 GB/14.6 GiB)
+[    7.394419] sd 3:0:0:0: [sdc] Write Protect is off
+[    7.394421] sd 3:0:0:0: [sdc] Mode Sense: 03 00 00 00
+[    7.394703] sd 3:0:0:0: [sdc] No Caching mode page found
+[    7.394707] sd 3:0:0:0: [sdc] Assuming drive cache: write through
+[    7.418787] sd 3:0:0:0: [sdc] Attached SCSI removable disk
+[    7.827238] r8169 0000:07:00.0 eth0: Link is Up - 100Mbps/Full - flow control rx/tx
+[   15.933617] platform surface_aggregator_cdev: deferred probe pending: (reason unknown)
+[ 3577.673176] usb 2-1: USB disconnect, device number 2
+[ 6071.082328] usb 2-2: USB disconnect, device number 3
+[ 6936.599411] usb 3-1: new SuperSpeed USB device number 2 using xhci_hcd
+[ 6936.619815] usb 3-1: LPM exit latency is zeroed, disabling LPM.
+[ 6936.620307] usb 3-1: New USB device found, idVendor=0dd8, idProduct=3801, bcdDevice= 2.00
+[ 6936.620320] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 6936.620326] usb 3-1: Product: OnlyDisk
+[ 6936.620330] usb 3-1: Manufacturer: Netac
+[ 6936.620334] usb 3-1: SerialNumber: FC1837000FE36
+[ 6936.621745] usb-storage 3-1:1.0: USB Mass Storage device detected
+[ 6936.622397] scsi host2: usb-storage 3-1:1.0
+[ 6937.635815] scsi 2:0:0:0: Direct-Access     Netac    OnlyDisk         3.00 PQ: 0 ANSI: 4
+[ 6937.636379] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[ 6937.638075] sd 2:0:0:0: [sdb] 122880000 512-byte logical blocks: (62.9 GB/58.6 GiB)
+[ 6937.638206] sd 2:0:0:0: [sdb] Write Protect is off
+[ 6937.638208] sd 2:0:0:0: [sdb] Mode Sense: 03 00 00 00
+[ 6937.638369] sd 2:0:0:0: [sdb] No Caching mode page found
+[ 6937.638383] sd 2:0:0:0: [sdb] Assuming drive cache: write through
+[ 6937.679795]  sdb: sdb1
+[ 6937.679944] sd 2:0:0:0: [sdb] Attached SCSI removable disk
+[ 6992.270235] usb 3-1: USB disconnect, device number 2
+[ 7002.821991] usb 2-1: new high-speed USB device number 5 using xhci_hcd
+[ 7002.970653] usb 2-1: New USB device found, idVendor=abcd, idProduct=1234, bcdDevice= 1.00
+[ 7002.970668] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 7002.970674] usb 2-1: Product: UDisk           
+[ 7002.970678] usb 2-1: Manufacturer: General 
+[ 7002.970682] usb 2-1: SerialNumber: \xd0\x89
+[ 7002.972215] usb-storage 2-1:1.0: USB Mass Storage device detected
+[ 7002.972849] scsi host2: usb-storage 2-1:1.0
+[ 7004.002540] scsi 2:0:0:0: Direct-Access     General  UDisk            5.00 PQ: 0 ANSI: 2
+[ 7004.003299] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[ 7004.004647] sd 2:0:0:0: [sdb] 15728640 512-byte logical blocks: (8.05 GB/7.50 GiB)
+[ 7004.004805] sd 2:0:0:0: [sdb] Write Protect is off
+[ 7004.004808] sd 2:0:0:0: [sdb] Mode Sense: 0b 00 00 08
+[ 7004.004933] sd 2:0:0:0: [sdb] No Caching mode page found
+[ 7004.004935] sd 2:0:0:0: [sdb] Assuming drive cache: write through
+[ 7004.027007]  sdb: sdb1
+[ 7004.027248] sd 2:0:0:0: [sdb] Attached SCSI removable disk

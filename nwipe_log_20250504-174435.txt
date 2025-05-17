@@ -1,0 +1,260 @@
+[2025/05/04 17:44:37]    info: ShredOS v2024.11_27_x86-64_0.38
+[2025/05/04 17:44:37]    info: Linux version 6.11.11 (nick@nick-np5xnp6xnp7xpnp
+                               ) (x86_64-buildroot-linux-gnu-gcc.br_real (Buil
+                               droot -ge80f0d4972) 13.3.0, GNU ld (GNU Binutil
+                               s) 2.42) #2 SMP PREEMPT_DYNAMIC Thu Jan 23 10:4
+                               2:35 GMT 2025
+[2025/05/04 17:44:37]  notice: Found /dev/sda,  ATA-SSD, MSI S270 240GB,  240 GB, S/N=511241206113000025
+[2025/05/04 17:44:37]    info: /dev/sda, sector(logical)/block(physical) sizes 512/512
+[2025/05/04 17:44:37]    info: HPA:  max sectors   = 468862128/468862128, hpa is disabled
+ on /dev/sda
+[2025/05/04 17:44:37]    info: HPA values 468862128 / 468862128 on /dev/sda
+[2025/05/04 17:44:37]    info: hdparm:DCO Real max sectors reported as 468862128 on /dev/sda
+[2025/05/04 17:44:37]    info: NWipe: DCO Real max sectors reported as 468862128 on /dev/sda
+[2025/05/04 17:44:37]    info: libata: apparent max sectors reported as 468862128 with sector size as 512/512 (logical/physical) on /dev/sda
+[2025/05/04 17:44:37]    info: No hidden sectors on /dev/sda
+[2025/05/04 17:44:37]    info: func:nwipe_read_dco_real_max_sectors(), DCO real max sectors = 468862128
+[2025/05/04 17:44:37]    info:  
+[2025/05/04 17:44:37] warning: Smartctl is unable to provide smart data for /dev/sdb
+[2025/05/04 17:44:37]  notice: Found /dev/sdb,  USB    , VendorCo ProductCode, 8053 MB, S/N=(S/N: unknown)
+[2025/05/04 17:44:37]    info: /dev/sdb, sector(logical)/block(physical) sizes 512/512
+[2025/05/04 17:44:37]   error: SG_IO bad/missing sense data hdparm --verbose -N /dev/sdb 2>&1
+
+[2025/05/04 17:44:37] warning: [UNKNOWN] We can't find the HPA line, has hdparm ouput unknown/changed? /dev/sdb
+[2025/05/04 17:44:37]    info: hdparm:DCO Real max sectors reported as 1 on /dev/sdb
+[2025/05/04 17:44:37]    info: NWipe: DCO Real max sectors reported as 1 on /dev/sdb
+[2025/05/04 17:44:37]    info: libata: apparent max sectors reported as 15728640 with sector size as 512/512 (logical/physical) on /dev/sdb
+[2025/05/04 17:44:37]    info: func:nwipe_read_dco_real_max_sectors(), DCO real max sectors = 0
+[2025/05/04 17:44:37]    info:  
+[2025/05/04 17:44:37] warning: Smartctl is unable to provide smart data for /dev/sdc
+[2025/05/04 17:44:37]  notice: Found /dev/sdc,  USB    , VendorCo ProductCode,   15 GB, S/N=(S/N: unknown)
+[2025/05/04 17:44:37]    info: /dev/sdc, sector(logical)/block(physical) sizes 512/512
+[2025/05/04 17:44:37]   error: SG_IO bad/missing sense data hdparm --verbose -N /dev/sdc 2>&1
+
+[2025/05/04 17:44:37] warning: [UNKNOWN] We can't find the HPA line, has hdparm ouput unknown/changed? /dev/sdc
+[2025/05/04 17:44:37]    info: hdparm:DCO Real max sectors reported as 1 on /dev/sdc
+[2025/05/04 17:44:37]    info: NWipe: DCO Real max sectors reported as 1 on /dev/sdc
+[2025/05/04 17:44:37]    info: libata: apparent max sectors reported as 30720000 with sector size as 512/512 (logical/physical) on /dev/sdc
+[2025/05/04 17:44:37]    info: func:nwipe_read_dco_real_max_sectors(), DCO real max sectors = 0
+[2025/05/04 17:44:37]    info:  
+[2025/05/04 17:44:37]    info: Automatically enumerated 3 devices.
+[2025/05/04 17:44:37]    info: bios-version = F.30
+[2025/05/04 17:44:37]    info: bios-release-date = 12/24/2019
+[2025/05/04 17:44:37]    info: system-manufacturer = Hewlett-Packard
+[2025/05/04 17:44:37]    info: system-product-name = HP Notebook
+[2025/05/04 17:44:37]    info: system-version = Type1ProductConfigId
+[2025/05/04 17:44:37]    info: system-serial-number = CND5221KQK
+[2025/05/04 17:44:37]    info: system-uuid = 7540729a-4fff-e411-a26a-308d996943ae
+[2025/05/04 17:44:37]    info: baseboard-manufacturer = Hewlett-Packard
+[2025/05/04 17:44:37]    info: baseboard-product-name = 80C1
+[2025/05/04 17:44:37]    info: baseboard-version = 96.53
+[2025/05/04 17:44:37]    info: baseboard-serial-number = PFGCUB31W8QLZ5
+[2025/05/04 17:44:37]    info: baseboard-asset-tag = Type2 - Board Asset Tag
+[2025/05/04 17:44:37]    info: chassis-manufacturer = Hewlett-Packard
+[2025/05/04 17:44:37]    info: chassis-type = Notebook
+[2025/05/04 17:44:37]    info: chassis-version = Chassis Version
+[2025/05/04 17:44:37]    info: chassis-serial-number = Chassis Serial Number
+[2025/05/04 17:44:37]    info: chassis-asset-tag = Chassis Asset Tag
+[2025/05/04 17:44:37]    info: processor-family = Pentium
+[2025/05/04 17:44:37]    info: processor-manufacturer = Intel(R) Corporation
+[2025/05/04 17:44:37]    info: processor-version = Intel(R) Pentium(R) CPU 3825U @ 1.90GHz
+[2025/05/04 17:44:37]    info: processor-frequency = 1900 MHz
+[2025/05/04 17:44:37]  notice: Opened entropy source '/dev/urandom'.
+[2025/05/04 17:44:37]  notice: hwmon: Module drivetemp loaded, drive temperatures available
+[2025/05/04 17:44:37]  notice: hwmon: sda has temperature monitoring
+[2025/05/04 17:44:37]    info: Temperature limits for /dev/sda, critical=N/A, max=N/A, highest=N/A, lowest=N/A, min=N/A, low critical=N/A. 
+[2025/05/04 17:44:37]    info: Temperature limits for /dev/sdb, critical=N/A, max=N/A, highest=N/A, lowest=N/A, min=N/A, low critical=N/A. 
+[2025/05/04 17:44:37]    info: Temperature limits for /dev/sdc, critical=N/A, max=N/A, highest=N/A, lowest=N/A, min=N/A, low critical=N/A. 
+[2025/05/04 17:47:50]    info: Updated PDF_Certificate.PDF_Enable with value DISABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 17:47:53]    info: Updated PDF_Certificate.PDF_Enable with value ENABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 17:47:56]    info: Updated PDF_Certificate.PDF_Enable with value DISABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 17:48:48]    info: Populated /etc/nwipe/nwipe.conf with user selected customer
+[2025/05/04 17:48:59]    info: Deleted customer entry from cache
+[2025/05/04 17:48:59]   error: func:delete_customer_csv_entry:Unable to remove /etc/nwipe/nwipe_customers.csv.backup.tmp
+[2025/05/04 17:49:09]   error: func:delete_customer_csv_entry:Unable to remove /etc/nwipe/nwipe_customers.csv.backup.tmp
+[2025/05/04 17:49:10]   error: func:delete_customer_csv_entry:Unable to remove /etc/nwipe/nwipe_customers.csv.backup.tmp
+[2025/05/04 17:49:32]    info: [Success] Business name written to /etc/nwipe/nwipe.conf
+[2025/05/04 17:49:38]    info: [Success] Business address written to /etc/nwipe/nwipe.conf
+[2025/05/04 17:49:42]    info: [Success] Business contact name written to /etc/nwipe/nwipe.conf
+[2025/05/04 17:49:47]    info: [Success] Business contact phone written to /etc/nwipe/nwipe.conf
+[2025/05/04 17:50:00]    info: [Success] operator/technician name written to /etc/nwipe/nwipe.conf
+[2025/05/04 17:50:22]   error: func:delete_customer_csv_entry:Unable to remove /etc/nwipe/nwipe_customers.csv.backup.tmp
+[2025/05/04 17:50:43]   error: Insuffient fields in customer entry, expected 4, actual(field_count) 1, idx=0
+[2025/05/04 17:51:34]    info: Updated PDF_Certificate.PDF_Preview with value ENABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 17:52:02]    info: Updated PDF_Certificate.PDF_Preview with value DISABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 17:52:23]    info: [Success] Business name written to /etc/nwipe/nwipe.conf
+[2025/05/04 17:52:59]   error: func:delete_customer_csv_entry:Unable to remove /etc/nwipe/nwipe_customers.csv.backup.tmp
+[2025/05/04 17:54:56]  notice: Program options are set as follows...
+[2025/05/04 17:54:56]  notice:   autonuke = 0 (off)
+[2025/05/04 17:54:56]  notice:   autopoweroff = 0 (off)
+[2025/05/04 17:54:56]  notice:   do not perform a final blank pass
+[2025/05/04 17:54:56]  notice:   banner   = ShredOS v2024.11_27_x86-64_0.38
+[2025/05/04 17:54:56]  notice:   prng     = XORoshiro-256 (EXPERIMENTAL!)
+[2025/05/04 17:54:56]  notice:   method   = Fill With Ones
+[2025/05/04 17:54:56]  notice:   quiet    = 0
+[2025/05/04 17:54:56]  notice:   rounds   = 2
+[2025/05/04 17:54:56]  notice:   sync     = 100000
+[2025/05/04 17:54:56]  notice:   verify   = 1 (last pass)
+[2025/05/04 17:54:56]  notice: /dev/sda has serial number 511241206113000025
+[2025/05/04 17:54:56]  notice: /dev/sda, sect/blk/dev 512/4096/240057409536
+[2025/05/04 17:54:56]  notice: Invoking method 'Fill With Ones' on /dev/sda
+[2025/05/04 17:54:56]  notice: Starting round 1 of 2 on /dev/sda
+[2025/05/04 17:54:56]  notice: Starting pass 1/1, round 1/2, on /dev/sda
+[2025/05/04 17:54:56]  notice: /dev/sdb has serial number (S/N: unknown)
+[2025/05/04 17:54:56]  notice: /dev/sdb, sect/blk/dev 512/4096/8053063680
+[2025/05/04 17:54:56]  notice: Invoking method 'Fill With Ones' on /dev/sdb
+[2025/05/04 17:54:56]  notice: Starting round 1 of 2 on /dev/sdb
+[2025/05/04 17:54:56]  notice: Starting pass 1/1, round 1/2, on /dev/sdb
+[2025/05/04 17:54:56]  notice: /dev/sdc has serial number (S/N: unknown)
+[2025/05/04 17:54:56]  notice: /dev/sdc, sect/blk/dev 512/4096/15728640000
+[2025/05/04 17:54:56]  notice: Invoking method 'Fill With Ones' on /dev/sdc
+[2025/05/04 17:54:56]  notice: Starting round 1 of 2 on /dev/sdc
+[2025/05/04 17:54:56]  notice: Starting pass 1/1, round 1/2, on /dev/sdc
+[2025/05/04 17:56:49]    info: Toggle font size
+[2025/05/04 18:13:47]  notice: 8053063680 bytes written to /dev/sdb
+[2025/05/04 18:13:47]  notice: Finished pass 1/1, round 1/2, on /dev/sdb
+[2025/05/04 18:13:47]  notice: Finished round 1 of 2 on /dev/sdb
+[2025/05/04 18:13:47]  notice: Starting round 2 of 2 on /dev/sdb
+[2025/05/04 18:13:47]  notice: Starting pass 1/1, round 2/2, on /dev/sdb
+[2025/05/04 18:13:54]  notice: 240057409536 bytes written to /dev/sda
+[2025/05/04 18:13:54]  notice: Finished pass 1/1, round 1/2, on /dev/sda
+[2025/05/04 18:13:54]  notice: Finished round 1 of 2 on /dev/sda
+[2025/05/04 18:13:54]  notice: Starting round 2 of 2 on /dev/sda
+[2025/05/04 18:13:54]  notice: Starting pass 1/1, round 2/2, on /dev/sda
+[2025/05/04 18:33:21]  notice: 240057409536 bytes written to /dev/sda
+[2025/05/04 18:33:21]  notice: Verifying pass 1 of 1, round 2 of 2, on /dev/sda
+[2025/05/04 18:36:14]  notice: 8053063680 bytes written to /dev/sdb
+[2025/05/04 18:36:14]  notice: Verifying pass 1 of 1, round 2 of 2, on /dev/sdb
+[2025/05/04 18:40:21]  notice: 15728640000 bytes written to /dev/sdc
+[2025/05/04 18:40:21]  notice: Finished pass 1/1, round 1/2, on /dev/sdc
+[2025/05/04 18:40:21]  notice: Finished round 1 of 2 on /dev/sdc
+[2025/05/04 18:40:21]  notice: Starting round 2 of 2 on /dev/sdc
+[2025/05/04 18:40:21]  notice: Starting pass 1/1, round 2/2, on /dev/sdc
+[2025/05/04 18:41:01]  notice: 240057409536 bytes read from /dev/sda
+[2025/05/04 18:41:01]  notice: Verified pass 1 of 1, round 2 of 2, on '/dev/sda'.
+[2025/05/04 18:41:01]  notice: Finished pass 1/1, round 2/2, on /dev/sda
+[2025/05/04 18:41:01]  notice: Finished final round 2 of 2 on /dev/sda
+[2025/05/04 18:43:46]  notice: 8053063680 bytes read from /dev/sdb
+[2025/05/04 18:43:46]  notice: Verified pass 1 of 1, round 2 of 2, on '/dev/sdb'.
+[2025/05/04 18:43:46]  notice: Finished pass 1/1, round 2/2, on /dev/sdb
+[2025/05/04 18:43:46]  notice: Finished final round 2 of 2 on /dev/sdb
+[2025/05/04 19:12:09]  notice: 15728640000 bytes written to /dev/sdc
+[2025/05/04 19:12:09]  notice: Verifying pass 1 of 1, round 2 of 2, on /dev/sdc
+[2025/05/04 19:24:25]  notice: 15728640000 bytes read from /dev/sdc
+[2025/05/04 19:24:25]  notice: Verified pass 1 of 1, round 2 of 2, on '/dev/sdc'.
+[2025/05/04 19:24:25]  notice: Finished pass 1/1, round 2/2, on /dev/sdc
+[2025/05/04 19:24:25]  notice: Finished final round 2 of 2 on /dev/sdc
+
+******************************** Error Summary *********************************
+!   Device | Pass Errors | Verifications Errors | Fdatasync I\O Errors
+--------------------------------------------------------------------------------
+       sda |           0 |                    0 |                    0
+       sdb |           0 |                    0 |                    0
+       sdc |           0 |                    0 |                    0
+********************************************************************************
+
+********************************* Drive Status *********************************
+!   Device | Status | Thru-put | HH:MM:SS | Model/Serial Number
+--------------------------------------------------------------------------------
+       sda | Erased |  260 MB/s | 00:46:05 | MSI S270 240GB/511241206113000025
+       sdb | Erased | 8245 KB/s | 00:48:50 | VendorCo ProductC/(S/N: unknown)
+       sdc | Erased | 8788 KB/s | 01:29:29 | VendorCo ProductC/(S/N: unknown)
+--------------------------------------------------------------------------------
+[2025/05/04 19:25:34] Total Throughput  277 MB/s, Fill With Ones, 2R+NB+VL
+********************************************************************************
+
+Creating PDF report in .
+
+[2025/05/04 19:25:34]    info: Nwipe successfully completed. See summary table for details.
+[2025/05/04 19:26:51]    info: ShredOS v2024.11_27_x86-64_0.38
+[2025/05/04 19:26:51]    info: Linux version 6.11.11 (nick@nick-np5xnp6xnp7xpnp
+                               ) (x86_64-buildroot-linux-gnu-gcc.br_real (Buil
+                               droot -ge80f0d4972) 13.3.0, GNU ld (GNU Binutil
+                               s) 2.42) #2 SMP PREEMPT_DYNAMIC Thu Jan 23 10:4
+                               2:35 GMT 2025
+[2025/05/04 19:26:51]  notice: Found /dev/sda,  ATA-SSD, MSI S270 240GB,  240 GB, S/N=511241206113000025
+[2025/05/04 19:26:51]    info: /dev/sda, sector(logical)/block(physical) sizes 512/512
+[2025/05/04 19:26:51]    info: HPA:  max sectors   = 468862128/468862128, hpa is disabled
+ on /dev/sda
+[2025/05/04 19:26:51]    info: HPA values 468862128 / 468862128 on /dev/sda
+[2025/05/04 19:26:51]    info: hdparm:DCO Real max sectors reported as 468862128 on /dev/sda
+[2025/05/04 19:26:51]    info: NWipe: DCO Real max sectors reported as 468862128 on /dev/sda
+[2025/05/04 19:26:51]    info: libata: apparent max sectors reported as 468862128 with sector size as 512/512 (logical/physical) on /dev/sda
+[2025/05/04 19:26:51]    info: No hidden sectors on /dev/sda
+[2025/05/04 19:26:51]    info: func:nwipe_read_dco_real_max_sectors(), DCO real max sectors = 468862128
+[2025/05/04 19:26:51]    info:  
+[2025/05/04 19:26:51]    info: Automatically enumerated 1 devices.
+[2025/05/04 19:26:51]    info: bios-version = F.30
+[2025/05/04 19:26:51]    info: bios-release-date = 12/24/2019
+[2025/05/04 19:26:51]    info: system-manufacturer = Hewlett-Packard
+[2025/05/04 19:26:51]    info: system-product-name = HP Notebook
+[2025/05/04 19:26:51]    info: system-version = Type1ProductConfigId
+[2025/05/04 19:26:51]    info: system-serial-number = CND5221KQK
+[2025/05/04 19:26:51]    info: system-uuid = 7540729a-4fff-e411-a26a-308d996943ae
+[2025/05/04 19:26:51]    info: baseboard-manufacturer = Hewlett-Packard
+[2025/05/04 19:26:51]    info: baseboard-product-name = 80C1
+[2025/05/04 19:26:51]    info: baseboard-version = 96.53
+[2025/05/04 19:26:51]    info: baseboard-serial-number = PFGCUB31W8QLZ5
+[2025/05/04 19:26:51]    info: baseboard-asset-tag = Type2 - Board Asset Tag
+[2025/05/04 19:26:51]    info: chassis-manufacturer = Hewlett-Packard
+[2025/05/04 19:26:51]    info: chassis-type = Notebook
+[2025/05/04 19:26:51]    info: chassis-version = Chassis Version
+[2025/05/04 19:26:51]    info: chassis-serial-number = Chassis Serial Number
+[2025/05/04 19:26:51]    info: chassis-asset-tag = Chassis Asset Tag
+[2025/05/04 19:26:51]    info: processor-family = Pentium
+[2025/05/04 19:26:51]    info: processor-manufacturer = Intel(R) Corporation
+[2025/05/04 19:26:51]    info: processor-version = Intel(R) Pentium(R) CPU 3825U @ 1.90GHz
+[2025/05/04 19:26:51]    info: processor-frequency = 1900 MHz
+[2025/05/04 19:26:51]  notice: Opened entropy source '/dev/urandom'.
+[2025/05/04 19:26:51]  notice: hwmon: Module drivetemp loaded, drive temperatures available
+[2025/05/04 19:26:51]  notice: hwmon: sda has temperature monitoring
+[2025/05/04 19:26:51]    info: Temperature limits for /dev/sda, critical=N/A, max=N/A, highest=N/A, lowest=N/A, min=N/A, low critical=N/A. 
+[2025/05/04 19:34:00]    info: Toggle font size
+[2025/05/04 19:34:08]    info: Updated PDF_Certificate.PDF_Enable with value ENABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:34:09]    info: Updated PDF_Certificate.PDF_Enable with value DISABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:34:20]   error: Insuffient fields in customer entry, expected 4, actual(field_count) 1, idx=0
+[2025/05/04 19:34:43]   error: func:delete_customer_csv_entry:Unable to remove /etc/nwipe/nwipe_customers.csv.backup.tmp
+[2025/05/04 19:35:10]    info: Updated PDF_Certificate.PDF_Preview with value ENABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:35:25]    info: Updated PDF_Certificate.PDF_Preview with value DISABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:35:25]    info: Updated PDF_Certificate.PDF_Preview with value ENABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:35:25]    info: Updated PDF_Certificate.PDF_Preview with value DISABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:35:28]    info: Updated PDF_Certificate.PDF_Preview with value ENABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:35:28]    info: Updated PDF_Certificate.PDF_Preview with value DISABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:36:44]    info: Updated PDF_Certificate.PDF_Enable with value ENABLED in /etc/nwipe/nwipe.conf
+[2025/05/04 19:37:02]    info: Toggle font size
+[2025/05/04 19:38:38]  notice: Program options are set as follows...
+[2025/05/04 19:38:38]  notice:   autonuke = 0 (off)
+[2025/05/04 19:38:38]  notice:   autopoweroff = 0 (off)
+[2025/05/04 19:38:38]  notice:   do not perform a final blank pass
+[2025/05/04 19:38:38]  notice:   banner   = ShredOS v2024.11_27_x86-64_0.38
+[2025/05/04 19:38:38]  notice:   prng     = Mersenne Twister
+[2025/05/04 19:38:38]  notice:   method   = PRNG Stream
+[2025/05/04 19:38:38]  notice:   quiet    = 0
+[2025/05/04 19:38:38]  notice:   rounds   = 3
+[2025/05/04 19:38:38]  notice:   sync     = 100000
+[2025/05/04 19:38:38]  notice:   verify   = 2 (all passes)
+[2025/05/04 19:38:38]  notice: /dev/sda has serial number 511241206113000025
+[2025/05/04 19:38:38]  notice: /dev/sda, sect/blk/dev 512/4096/240057409536
+[2025/05/04 19:38:38]  notice: Invoking method 'PRNG Stream' on /dev/sda
+[2025/05/04 19:38:38]  notice: Starting round 1 of 3 on /dev/sda
+[2025/05/04 19:38:38]  notice: Starting pass 1/1, round 1/3, on /dev/sda
+[2025/05/04 19:38:38]  notice: Initialising Mersenne Twister prng
+[2025/05/04 19:38:38]  notice: prng stream is active
+
+******************************** Error Summary *********************************
+!   Device | Pass Errors | Verifications Errors | Fdatasync I\O Errors
+--------------------------------------------------------------------------------
+       sda |           0 |                    0 |                    0
+********************************************************************************
+
+********************************* Drive Status *********************************
+!   Device | Status | Thru-put | HH:MM:SS | Model/Serial Number
+--------------------------------------------------------------------------------
+!      sda |UABORTED|  122 MB/s | 00:00:50 | MSI S270 240GB/511241206113000025
+--------------------------------------------------------------------------------
+[2025/05/04 19:39:28] Total Throughput  122 MB/s, PRNG Stream, 3R+NB+VA
+********************************************************************************
+
+Creating PDF report in .
+
+[2025/05/04 19:39:28]    info: Nwipe was aborted by the user. Check the summary table for the drive status.
